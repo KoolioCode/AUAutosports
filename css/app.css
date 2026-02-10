@@ -1,0 +1,242 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.banner{
+    background-image: url(../assets/bg/Website\ pic\ -\ Edited.jpg);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+.nav{
+    width: 90%;
+    margin: auto;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1;
+}
+.logo{
+    cursor: pointer;
+}
+.nav ul li{
+    list-style: none;
+    display:  inline-block;
+    margin: 0 94px;
+    position: relative;
+}
+.nav ul li a{
+    font-family: "sweet-sans-pro", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    font-size: 38px;
+}
+.nav ul li ::after{
+    content: '';
+    height: 5px;
+    width: 0;
+    background-color: white;
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    transition: 0.5s;
+}
+.nav ul li :hover:after{
+    width: 100%;
+}
+.intro{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    margin: auto;
+    transform: translateY(-50%);
+    text-align: center;
+    color:  white;
+}
+.intro h1{
+    font-family: "sweet-sans-pro", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 75px;
+}
+.intro p{
+    margin: auto;
+    width: 75%;
+    font-family: "sweet-sans-pro", sans-serif;
+    font-size: 30px;
+    left: auto;
+    padding: 10px;
+}
+.bgf{
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+.bgv{
+    position: fixed;
+    right: auto;
+    bottom: auto;
+    z-index: -2;
+}
+.bgi {
+  position: fixed;
+  inset: 0; 
+  z-index: -2;
+  overflow: hidden;    
+}
+.bgi img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: none;  
+  min-width: 100%; 
+  min-height: 100%;   
+  object-fit: cover;   
+  pointer-events: none;    
+}
+.bginfo{
+    height: 300px; 
+}
+.yap{
+    width: 100%;
+    position: relative;
+    padding-top: 0%;
+    margin: auto;
+    transform: translateY(-50%);
+    text-align: center;
+    color:  white;
+}
+.yap img{
+    height: 300px; 
+    width: auto;
+    padding-top: 25px;
+    padding-bottom: 25px; 
+}
+.yap h1{
+    padding-top: 50%;
+    font-family: "sweet-sans-pro", sans-serif;
+    font-weight: 600;
+    font-size: 80px;
+    animation: fade linear;
+    animation-timeline: view();
+}
+.yap p{
+    margin: auto;
+    width: 75%;
+    font-family: "sweet-sans-pro", sans-serif;
+    font-size: 30px;
+    left: auto;
+    padding: 100px;
+}
+.yap h2{
+    padding-top: 200px;
+    margin: auto;
+    width: 75%;
+    font-family: "sweet-sans-pro", sans-serif;
+    font-size: 30px;
+    left: auto;
+    animation: fade linear;
+    animation-timeline: view();
+}
+.sponsorbanner{
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+.sponsorinfo{
+    width: 100%;
+    position: relative;
+    top: 50%;
+    margin: auto;
+    transform: translateY(-50%);
+    text-align: center;
+    color:  white;
+}
+.sponsorinfo h1{
+    font-family: "sweet-sans-pro", sans-serif;
+    font-weight: 600;
+    font-size: 80px;
+    opacity: 0;
+    animation: fade linear;
+    animation-timeline: view();
+}
+.sponsorinfo p{
+    margin: auto;
+    width: 75%;
+    font-family: "sweet-sans-pro", sans-serif;
+    font-size: 30px;
+    left: auto;
+    padding: 10px;
+    opacity: 0;
+    animation: fade linear;
+    animation-timeline: view();
+}
+.sponimg {
+    width: 100%;
+    height: 500px;
+    display: grid;
+    place-items: center;
+}
+.sponimg img {
+    width: 80%;
+    height: 80%;
+    object-fit: contain;
+    display: block;          
+    max-width: 100%;
+    max-height: 100%;
+}
+.aboutpage{
+    height: 900px; 
+    padding-top: 0%;
+    z-index: -1;
+    pointer-events: none;
+}
+.aboutpage img{
+    height: 300px; 
+    width: auto;
+    padding-top: 25px;
+    padding-bottom: 25px; 
+}
+@keyframes fadequick {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+    10%{
+        opacity: 1;
+    }
+}
+@keyframes fade {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+    30%{
+        opacity: 1;
+    }
+}
+@media (min-aspect-ratio: 16/9){
+    .bgv{
+        width: 100%;
+        height: auto;
+    }
+}
+@media (max-aspect-ratio: 16/9){
+    .bgv{
+        width: auto;
+        height: 100%;
+    }
+}
