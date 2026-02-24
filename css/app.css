@@ -4,6 +4,18 @@
     font-family: sans-serif;
 }
 
+body{
+  margin: auto;
+  overflow-x: hidden;
+  color: #222;
+  transition: all .5s;
+}
+
+.noscroll{
+  height: 100%;
+  overflow-y: hidden;
+}
+
 
 .parent {
   display: grid;
@@ -306,4 +318,124 @@ and (min-width : 1224px) {
 @media only screen 
 and (min-width : 1824px) {
   /* Styles */
+}
+
+
+.darkmodeon {
+  width: 33.3333%;
+}
+@media ((prefers-color-scheme: light)) {
+  .column-1-3 {
+    width: 100%;
+  }
+}
+
+@media  ((prefers-color-scheme: dark)) {
+ 
+  body {
+    color: #eee;
+    background: #222;
+  }
+
+  .noscroll{
+    height: 100%;
+    overflow-y: hidden;
+    
+  }
+
+  .fillcolors{
+    background: #292929;
+    grid-column: 1/8;
+    grid-row: 1/2;
+  }
+  
+  .burger div{
+    background-color: white;
+   
+    
+  }
+
+  nav img.light{
+    visibility: hidden;
+    display: none;
+  }
+
+  nav img.dark{
+    visibility: visible;
+  }
+
+  body a {
+    color: #809fff;
+  }
+
+  nav {
+    background-color: #292929;
+  }
+
+  .navlinks a{
+    color: white;
+    background-color: #292929;
+    
+  }
+  
+  header {
+    background-color: #292929;
+  }
+
+  .counter-container {
+    background-color: #292929 ;
+  }
+
+  span.counter-text{
+    color: white; 
+  }
+
+  span.counter-num{
+    color: white;
+  }
+
+  footer {
+    color: white;
+    background-color: #292929;
+  }
+  
+  
+    
+}
+
+.navActive{
+  transform:  translateX(0%);
+}
+
+@keyframes navLinkFade {
+  from { 
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to{
+    opactiy: 1;
+    transform: translateX(0px);
+  }
+}
+.toggle .line1 {
+  translate: 0px 8px;
+ rotate: -45deg;
+
+  transition: translate .25s ease, rotate .25s ease;
+  transition-delay: 0s, .25s;
+}
+.toggle .line2 {
+  transition: opacity 0s;
+  
+  transition-delay: .25s;
+ 
+  opacity: 0 ;
+}
+.toggle .line3 {
+  translate: 0px -8px;
+ rotate: 45deg;
+  transition: translate .25s ease, rotate .25s ease;
+  
+  transition-delay: 0s, .25s;
+  
 }
