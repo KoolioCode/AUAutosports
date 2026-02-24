@@ -5,9 +5,8 @@
 }
 
 
-.parent {
+.grid {
   display: grid;
-
   grid-template-columns:minmax(0px, 1fr) minmax(0px, 104px) minmax(0px, 108px) minmax(0px, 780px) minmax(0px, 108px) minmax(0px, 104px) minmax(0px, 1fr);
   grid-template-rows: minmax(0px, 50px) minmax(0px, 1fr) minmax(0px, 558px) minmax(0px, 863px) minmax(0px, 60px);
   grid-column-gap: 0px;
