@@ -100,12 +100,13 @@ nav img.dark{
 .navlogo a {
   display: flex;
   align-items: center;
-  justify-content: left;
+  justify-content: center;
   margin: 0;
   height: 100%;
   grid-column: 2/14;
  
 }
+
 .navpages {
   grid-column: 2/14;
   display: flex;
@@ -124,6 +125,72 @@ nav img.dark{
   
 }
 .navpages a{
+  font-weight: 600;
+  text-decoration: none;
+  place-content: center;
+  letter-spacing: 2px;
+  text-align: center;
+  font-family: "sweet-sans-pro", sans-serif; 
+  display: block;
+  height: 30px;
+  padding: 1em;
+  white-space: nowrap;
+  z-index: 16;
+  color: black;
+  margin: 0;
+}
+
+.navpagesL {
+  grid-column: 2/14;
+  display: flex;
+  justify-content: left;
+  width: 50%;
+  padding: none;
+  z-index: 15;
+  margin: 0;
+  
+  
+  
+}
+.navpagesL li {
+  list-style: none;
+  margin: 0;
+  
+}
+.navpagesL a{
+  font-weight: 600;
+  text-decoration: none;
+  place-content: center;
+  letter-spacing: 2px;
+  text-align: center;
+  font-family: "sweet-sans-pro", sans-serif; 
+  display: block;
+  height: 30px;
+  padding: 1em;
+  white-space: nowrap;
+  z-index: 16;
+  color: black;
+  margin: 0;
+}
+
+.navpagesR {
+  grid-column: 2/14;
+  display: flex;
+  justify-content: right;
+  width: 50%;
+  padding: none;
+  z-index: 15;
+  margin: 0;
+  
+  
+  
+}
+.navpagesR li {
+  list-style: none;
+  margin: 0;
+  
+}
+.navpagesR a{
   font-weight: 600;
   text-decoration: none;
   place-content: center;
@@ -166,19 +233,34 @@ nav img.dark{
 }
 
 .headerimg {
-  display: flex;
+  
   grid-column: -1/1;
-  width: 100%;
-  aspect-ratio: 16/9;
+
+  height: calc(100vh - 30px - 2em) !important;
+  height: 100px;
+  
+  position: relative;
   
   
 }
 .headerimg video {
+  position: absolute;
   width: 100%;
-  height: auto;
-  object-fit:contain;
+  height: 100%;
+  object-fit:fill;
   margin: 0;
   object-position: top
+}
+
+.videotext {
+    position: absolute;
+    z-index: 100;
+    font-size: 5em;
+    font-family: "sweet-sans-pro", sans-serif; 
+    color: white;
+    font-weight: bolder;
+ 
+  
 }
 
 footer {
@@ -312,11 +394,12 @@ footer {
   font-size: 14px;
   color: black;
   padding: 1em;
+  font-weight: bolder;
   
 }
 
 nav ul.image:hover {text-decoration: none; background-color: none; color: white;}
-nav ul li a.linktext:hover  { text-decoration: none; background-color: rgb(131, 28, 186); color: white; transition: .25s ease; }
+nav ul li a.linktext:hover  { text-decoration: none;  color: #e86100; transition: .25s ease; }
 nav a img:hover { text-decoration: none; background-color: none; color: white;}
 a {text-decoration: none;}
 a:link { text-decoration: none; }
@@ -839,4 +922,89 @@ body{
   
   transition-delay: 0s, .25s;
   
+}
+*/
+.material-symbols-outlined{
+  color: black;
+  font-size: 2em;
+  text-align: center ;
+}
+
+.themeToggle{
+  justify-content: center;
+    
+  cursor: pointer;
+  user-select: none;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  padding: 1em;
+  
+}
+.themeToggle .lightmodebutton{
+  display: flex;
+  justify-content: center;
+  color: #222;
+  cursor: pointer;
+  user-select: none;
+  text-align: center;
+ rotate: 0deg;
+ opacity: 0;
+ transition-delay: 20s;
+  transition:  rotate 1s ease,  scale 0s ease;
+  
+  scale: 0%;
+  width: 0%;
+  position: relative;
+  
+}
+
+.themeToggle .darkmodebutton{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color: #222;
+  cursor: pointer;
+  user-select: none;
+
+  rotate: 0deg;
+  opacity: 100;
+  transition-delay: 20s;
+  transition:  rotate 1s ease, scale 0s ease;
+  scale: 100%;
+  width: 64px;
+  position: relative;
+  
+}
+
+.themeactive .lightmodebutton  {
+  display: flex;
+  justify-content: center;
+  color: #222;
+  cursor: pointer;
+  user-select: none;
+ 
+    rotate: 360deg;
+    opacity: 100;
+    transition-delay: 20s;
+ transition:  rotate 1s ease,  scale 0s ease;
+  scale: 100%;
+ width: 64px;
+ position: relative;
+}
+
+.themeactive .darkmodebutton {
+  display: flex;
+  justify-content: center;
+  color: #222;
+  cursor: pointer;
+  user-select: none;
+  rotate: -360deg;
+  opacity: 0;
+  transition-delay: 20s;
+  transition:  rotate 1s ease, scale 0s ease;
+  scale: 0%;
+   position: relative;
+  width: 0%;
+ 
 }

@@ -44,7 +44,7 @@ const navSlide = () => {
 navSlide();
 
 
-/*const modeToggle = () => {
+const modeToggle = () => {
 
   const themeToggle = document.querySelector('.themeToggle');
   
@@ -57,7 +57,7 @@ navSlide();
   }); 
 }
 
-modeToggle();*/
+modeToggle();
 
 
 
