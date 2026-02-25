@@ -106,7 +106,7 @@ nav img.dark{
   grid-column: 2/14;
  
 }
-.navlinks {
+.navpages {
   grid-column: 2/14;
   display: flex;
   justify-content: right;
@@ -118,12 +118,12 @@ nav img.dark{
   
   
 }
-.navlinks li {
+.navpages li {
   list-style: none;
   margin: 0;
   
 }
-.navlinks a{
+.navpages a{
   font-weight: 600;
   text-decoration: none;
   place-content: center;
@@ -181,6 +181,81 @@ nav img.dark{
   object-position: top
 }
 
+footer {
+  display: grid;
+  align-items: center;
+  width: 100%;
+  grid-column: -1/1;
+  background-color: #fafafa;
+  grid-template-columns: subgrid;
+  top: 0;
+  z-index: 10;
+  
+}
+
+.ftcontainer { 
+  display: block; 
+  align-items: center;
+  grid-column: 2/14;
+  background-color: #fafafa;
+  
+  
+  top: 0;
+  margin: 0;
+  
+}
+
+.ftlogo
+{
+  grid-column: 2/14;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  
+  
+}
+.ftlogo img {
+  display: flex;
+  
+  align-items: center;
+  width: 20%;
+  padding-top: 5em;
+  padding-bottom: 1em;
+  justify-content: center;
+  margin: 0;
+}
+
+.ftpages {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  grid-column: auto/span 11;
+  padding: none;
+ 
+  margin: 0;
+}
+
+.ftpages li {
+  list-style: none;
+  margin: 0;
+  
+}
+.ftpages a{
+  font-weight: 600;
+  text-decoration: none;
+  place-content: center;
+  letter-spacing: 2px;
+  text-align: center;
+  font-family: "sweet-sans-pro", sans-serif; 
+  display: block;
+  height: 30px;
+  padding: 1em;
+  white-space: nowrap;
+  z-index: 16;
+  color: black;
+  margin: 0;
+}
 
 nav ul.image:hover {text-decoration: none; background-color: none; color: white;}
 nav ul li a.linktext:hover  { text-decoration: none; background-color: rgb(131, 28, 186); color: white; transition: .25s ease; }
@@ -517,7 +592,7 @@ body{
   nav{
     min-width: 100%;
   }
-  .navlinks {
+  .navpages {
     width:70%;
   }
   .counter-wrapper{
@@ -553,7 +628,7 @@ body{
 
   
 
-  .navlinks{
+  .navpages{
     position: absolute;
     right: 0px;
     height: calc(100% -50px);
@@ -570,12 +645,12 @@ body{
     
   }
 
-  .navlinks li {
+  .navpages li {
     opacity: 10;
     border-radius: 50%;
     
   }
-  .navlinks a {
+  .navpages a {
     align-items: center center;
     padding-top: calc(12.5vh - 5px);
     padding-bottom: calc(12.5vh - 5px);
