@@ -154,7 +154,7 @@ nav img.dark{
   
   transition-delay:  .25s, 0s, .25s;
   
-  justify-content: right;
+  justify-content: center;
   
 }
 .navActive{
@@ -585,7 +585,7 @@ body{
   }
   
   .burger {
-    display:block;
+    display:flex;
   }
 }
 
