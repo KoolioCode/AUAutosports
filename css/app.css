@@ -57,7 +57,7 @@ nav {
   background-color: #fafafa;
   grid-template-columns: subgrid;
   top: 0;
-  z-index: 10;
+  z-index: 300;
   position: sticky;
 }
 
@@ -186,10 +186,10 @@ footer {
   align-items: center;
   width: 100%;
   grid-column: -1/1;
-  background-color: #fafafa;
+  background-color: #fbfbfb;
   grid-template-columns: subgrid;
   top: 0;
-  z-index: 10;
+  
   
 }
 
@@ -197,7 +197,7 @@ footer {
   display: block; 
   align-items: center;
   grid-column: 2/14;
-  background-color: #fafafa;
+  background-color: #fbfbfb;
   
   
   top: 0;
@@ -230,8 +230,8 @@ footer {
   display: flex;
   justify-content: center;
   width: 100%;
-  grid-column: auto/span 11;
-  padding: none;
+  
+  padding: 0;
  
   margin: 0;
 }
@@ -252,9 +252,65 @@ footer {
   height: 30px;
   padding: 1em;
   white-space: nowrap;
-  z-index: 16;
+  
   color: black;
   margin: 0;
+}
+
+.ftlinks {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  
+ 
+ 
+  margin: 0;
+}
+
+.ftlinks li {
+  list-style: none;
+  margin: 0;
+  
+}
+.ftlinks a{
+
+  text-decoration: none;
+  place-content: center;
+  letter-spacing: 2px;
+  text-align: center;
+ 
+  display: block;
+  height: 30px;
+  padding: 1em;
+  white-space: nowrap;
+  
+  color: black;
+  margin: 0;
+}
+
+
+.ftlinks img {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  margin: 0;
+  height: 100%;
+  grid-column: 2/14;
+ 
+}
+
+.ftcopyright {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding-bottom: 5em;
+  
+}
+.ftcopyright t {
+  font-family: "sweet-sans-pro", sans-serif;
+  font-size: 14px;
+  color: black;
 }
 
 nav ul.image:hover {text-decoration: none; background-color: none; color: white;}
