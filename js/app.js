@@ -51,10 +51,11 @@ const modeToggle = () => {
   themeToggle.addEventListener('click', () => {
 
 
-    
-    
     themeToggle.classList.toggle('themeactive');
-  }); 
+    setTimeout(() => {
+      themeToggle.classList.toggle('themescale');
+    }, 500); 
+  });
 }
 
 modeToggle();

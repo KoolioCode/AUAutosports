@@ -941,6 +941,7 @@ body{
   padding: 1em;
   
 }
+
 .themeToggle .lightmodebutton{
   display: flex;
   justify-content: center;
@@ -949,15 +950,66 @@ body{
   user-select: none;
   text-align: center;
  rotate: 0deg;
- opacity: 0;
- transition-delay: 20s;
-  transition:  rotate 1s ease,  scale 0s ease;
+ opacity: 100;
+
+  transition:  rotate 1s ease;
   
   scale: 0%;
   width: 0%;
   position: relative;
   
 }
+
+.themeToggle.themescale .lightmodebutton  {
+  display: flex;
+  justify-content: center;
+  color: #222;
+  cursor: pointer;
+  user-select: none;
+ 
+    rotate: 720deg;
+    opacity: 100;
+    
+  transition:  rotate .5s ease-in;
+  scale: 100%;
+  width: 64px;
+ position: relative;
+}
+
+.themeToggle.themeactive .lightmodebutton  {
+  display: flex;
+  justify-content: center;
+  color: #222;
+  cursor: pointer;
+  user-select: none;
+ 
+    rotate: 0deg;
+    opacity: 100;
+    
+  transition:  rotate .5s ease-in;
+  scale: 0;
+  width: 0;
+ position: relative;
+}
+
+.themeToggle.themeactive.themescale .lightmodebutton  {
+  display: flex;
+  justify-content: center;
+  color: #222;
+  cursor: pointer;
+  user-select: none;
+ 
+    rotate: 360deg;
+    opacity: 100;
+    
+  transition:  rotate .5s ease-out;
+  scale: 100%;
+  width: 64px;
+ position: relative;
+}
+
+
+
 
 .themeToggle .darkmodebutton{
   display: flex;
@@ -969,31 +1021,31 @@ body{
 
   rotate: 0deg;
   opacity: 100;
-  transition-delay: 20s;
-  transition:  rotate 1s ease, scale 0s ease;
+ 
+  transition:  rotate .5s ease-out;
   scale: 100%;
   width: 64px;
   position: relative;
   
 }
 
-.themeactive .lightmodebutton  {
+.themeToggle.themeactive .darkmodebutton {
   display: flex;
   justify-content: center;
   color: #222;
   cursor: pointer;
   user-select: none;
+  rotate: 360deg;
+  opacity: 100;
  
-    rotate: 360deg;
-    opacity: 100;
-    transition-delay: 20s;
- transition:  rotate 1s ease,  scale 0s ease;
+  transition:  rotate .5s ease-in;
+  
+   position: relative;
   scale: 100%;
- width: 64px;
- position: relative;
+  width: 64px;
+ 
 }
-
-.themeactive .darkmodebutton {
+.themeToggle.themescale .darkmodebutton {
   display: flex;
   justify-content: center;
   color: #222;
@@ -1001,8 +1053,24 @@ body{
   user-select: none;
   rotate: -360deg;
   opacity: 0;
-  transition-delay: 20s;
-  transition:  rotate 1s ease, scale 0s ease;
+ 
+  transition:  rotate 1s ease;
+  scale: 0%;
+   position: relative;
+  width: 0%;
+ 
+}
+
+.themeToggle.themeactive.themescale .darkmodebutton {
+  display: flex;
+  justify-content: center;
+  color: #222;
+  cursor: pointer;
+  user-select: none;
+  rotate: -360deg;
+  opacity: 0;
+  
+  transition:  rotate 1s ease;
   scale: 0%;
    position: relative;
   width: 0%;
