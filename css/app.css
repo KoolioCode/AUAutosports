@@ -2,59 +2,29 @@
     margin: 0;
     padding: 0;
     font-family: sans-serif;
+    transition: all;
     
 }
 
+html {
+  --mainPageColor: #fafafa;
+  --mainTextColor: black;
+  --mainFooterColor:#fbfbfb;
+  --mainIconColor:
+}
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html.dark {
+  --mainPageColor: #292929;
+  --mainTextColor: white;
+  --mainFooterColor: #292929;
 }
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
+
 nav {
   display: grid;
   align-items: center;
   width: 100%;
   grid-column: -1/1;
-  background-color: #fafafa;
+  background-color: var(--mainPageColor);
   grid-template-columns: subgrid;
   top: 0;
   z-index: 300;
@@ -65,7 +35,7 @@ nav {
   display: flex; 
   align-items: center;
   grid-column: 2/14;
-  background-color: #fafafa;
+  background-color: var(--mainPageColor);
   justify-content: space-between;
   position: sticky;
   top: 0;
@@ -136,7 +106,7 @@ nav img.dark{
   padding: 1em;
   white-space: nowrap;
   z-index: 16;
-  color: black;
+  color: var(--mainTextColor);
   margin: 0;
 }
 
@@ -169,7 +139,7 @@ nav img.dark{
   padding: 1em;
   white-space: nowrap;
   z-index: 16;
-  color: black;
+  color: var(--mainTextColor);
   margin: 0;
 }
 
@@ -202,7 +172,7 @@ nav img.dark{
   padding: 1em;
   white-space: nowrap;
   z-index: 16;
-  color: black;
+  color: var(--mainTextColor);
   margin: 0;
 }
 .burger {
@@ -237,7 +207,7 @@ nav img.dark{
   grid-column: -1/1;
 
   height: calc(100vh - 30px - 2em) !important;
-  height: 100px;
+  
   
   position: relative;
   
@@ -268,7 +238,7 @@ footer {
   align-items: center;
   width: 100%;
   grid-column: -1/1;
-  background-color: #fbfbfb;
+  background-color: var(--mainFooterColor);
   grid-template-columns: subgrid;
   top: 0;
   
@@ -279,7 +249,7 @@ footer {
   display: block; 
   align-items: center;
   grid-column: 2/14;
-  background-color: #fbfbfb;
+  background-color: var(--mainFooterColor);
   
   
   top: 0;
@@ -335,7 +305,7 @@ footer {
   padding: 1em;
   white-space: nowrap;
   
-  color: black;
+  color: var(--mainTextColor);
   margin: 0;
 }
 
@@ -366,7 +336,7 @@ footer {
   padding: 1em;
   white-space: nowrap;
   
-  color: black;
+  color: var(--mainTextColor);
   margin: 0;
 }
 
@@ -392,7 +362,7 @@ footer {
 .ftcopyright t {
   font-family: "sweet-sans-pro", sans-serif;
   font-size: 14px;
-  color: black;
+  color: var(--mainTextColor);
   padding: 1em;
   font-weight: bolder;
   
@@ -457,7 +427,7 @@ a:active { text-decoration: none; }
 
 body{
   margin: auto;
-  background-color: #fafafa;
+  background-color: var(--mainPageColor);
   overflow-x: hidden;
   transition: all .5s;
 }
@@ -726,83 +696,12 @@ body{
 
 
 @media screen and (max-width: 1024px){
-  body {
-    overflow-x: hidden;
-    
-  }
-  nav{
-    min-width: 100%;
-  }
-  .navpages {
-    width:70%;
-  }
-  .counter-wrapper{
-    width: 85vw;
-  }
-  .counter-container{
-    height: 26vm;
-    width: 26vm;
-    font-size: 12px;
-  }
+ 
 
 }
 @media screen and  (max-width: 850px) {
 
-  body {
-    overflow-x: hidden;
-    
-  }
-
-  .header{
-    grid-column: 1/2;
-  }
-  .header #bg {
-    display: none;
-    
-  }
-
-  nav {
-    align-content: stretch;
-    justify-content: space-between;
-    
-  }
-
-  
-
-  .navpages{
-    position: absolute;
-    right: 0px;
-    height: calc(100% -50px);
-    top:  50px;
-    background-color: #292929;
-    display: block;
-    flex-direction: column;
-    align-items: center;
-    width: 50%;
-    transform: translateX(100%);
-    transition: transform 0.5s ease-in-out;
-    justify-content: space-evenly;
-    
-    
-  }
-
-  .navpages li {
-    opacity: 10;
-    border-radius: 50%;
-    
-  }
-  .navpages a {
-    align-items: center center;
-    padding-top: calc(12.5vh - 5px);
-    padding-bottom: calc(12.5vh - 5px);
-    
-    height: 4fr;
-    
-  }
-  
-  .burger {
-    display:flex;
-  }
+ 
 }
 
 /*.darkmodeon {
@@ -924,8 +823,12 @@ body{
   
 }
 */
+
+
+
+
+/*dark/light toggle animations*/
 .material-symbols-outlined{
-  color: black;
   font-size: 2em;
   text-align: center ;
 }
@@ -945,7 +848,7 @@ body{
 .themeToggle .lightmodebutton{
   display: flex;
   justify-content: center;
-  color: #222;
+  color: var(--mainTextColor);
   cursor: pointer;
   user-select: none;
   text-align: center;
@@ -963,7 +866,7 @@ body{
 .themeToggle.themescale .lightmodebutton  {
   display: flex;
   justify-content: center;
-  color: #222;
+  color:  var(--mainTextColor);
   cursor: pointer;
   user-select: none;
  
@@ -979,7 +882,7 @@ body{
 .themeToggle.themeactive .lightmodebutton  {
   display: flex;
   justify-content: center;
-  color: #222;
+  color: var(--mainTextColor);
   cursor: pointer;
   user-select: none;
  
@@ -995,7 +898,7 @@ body{
 .themeToggle.themeactive.themescale .lightmodebutton  {
   display: flex;
   justify-content: center;
-  color: #222;
+  color: var(--mainTextColor);
   cursor: pointer;
   user-select: none;
  
@@ -1015,7 +918,7 @@ body{
   display: flex;
   justify-content: center;
   text-align: center;
-  color: #222;
+  color: var(--mainTextColor);
   cursor: pointer;
   user-select: none;
 
@@ -1032,7 +935,7 @@ body{
 .themeToggle.themeactive .darkmodebutton {
   display: flex;
   justify-content: center;
-  color: #222;
+  color: var(--mainTextColor);
   cursor: pointer;
   user-select: none;
   rotate: 360deg;
@@ -1045,10 +948,11 @@ body{
   width: 64px;
  
 }
+
 .themeToggle.themescale .darkmodebutton {
   display: flex;
   justify-content: center;
-  color: #222;
+  color: var(--mainTextColor);
   cursor: pointer;
   user-select: none;
   rotate: -360deg;
@@ -1064,7 +968,7 @@ body{
 .themeToggle.themeactive.themescale .darkmodebutton {
   display: flex;
   justify-content: center;
-  color: #222;
+  color: var(--mainTextColor);
   cursor: pointer;
   user-select: none;
   rotate: -360deg;
