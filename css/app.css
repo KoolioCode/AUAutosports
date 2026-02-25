@@ -6,6 +6,50 @@
 }
 
 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
 nav { 
   display: flex; 
   align-items: center;
@@ -14,6 +58,7 @@ nav {
   justify-content: space-between;
   position: sticky;
   top: 0;
+  margin: 0;
   
 }
 
@@ -28,6 +73,7 @@ nav img.dark{
   align-items: center;
   justify-content: left;
   height: 30px;
+  margin: 0;
   
   
 }
@@ -37,13 +83,14 @@ nav img.dark{
   justify-content: left;
   padding: 1em;
   height: 100%;
+  margin: 0;
  
 }
 .navlogo a {
   display: flex;
   align-items: center;
   justify-content: left;
- 
+  margin: 0;
   height: 100%;
   
  
@@ -55,12 +102,14 @@ nav img.dark{
   width: 50%;
   padding: none;
   z-index: 15;
+  margin: 0;
   
   
   
 }
 .navlinks li {
   list-style: none;
+  margin: 0;
   
 }
 .navlinks a{
@@ -81,13 +130,14 @@ nav img.dark{
 .burger {
   display: none;
   cursor: pointer;
+  margin: 0;
 }
 .burger div{
   
   width: 25px;
   height: 3px;
+  margin: 0;
   
-  margin: 5px;
   
   transition: translate .25s ease, rotate .25s ease, opacity 0s;
   
@@ -101,7 +151,7 @@ nav img.dark{
 }
 .linktext {
   transition: .25s ease;
-  
+  margin: 0;
 }
 
 .headerimg {
@@ -109,11 +159,15 @@ nav img.dark{
   grid-column: auto / span 12;
   width: 100%;
   aspect-ratio: 16/9;
+  margin: 0;
+  
 }
 .headerimg video {
   width: 100%;
   height: auto;
   object-fit:contain;
+  margin: 0;
+  object-position: top
 }
 
 
@@ -184,6 +238,7 @@ body{
 .noscroll{
   height: 100%;
   overflow-y: hidden;
+  margin: 0;
 }
 
 
@@ -191,9 +246,10 @@ body{
   display: grid;
   grid-template-columns: repeat(12, [col-start] 1fr);
   
-  gap: 20px;
+  column-gap: 20px;
   margin-left: 10%;
   margin-right: 10%;
+
     
   justify-self: center;
 }
