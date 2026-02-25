@@ -44,7 +44,7 @@ const navSlide = () => {
 navSlide();
 
 
-const modeToggle = () => {
+/*const modeToggle = () => {
 
   const themeToggle = document.querySelector('.themeToggle');
   
@@ -57,7 +57,7 @@ const modeToggle = () => {
   }); 
 }
 
-modeToggle();
+modeToggle();*/
 
 
 
@@ -73,16 +73,16 @@ modeToggle();
 
 
 
-var headerBg = document.getElementById('bg')
+/*var headerBg = document.getElementById('bg')
 window.addEventListener('scroll', function(){
   headerBg.style.opacity = 1 - +window.pageYOffset/880+''
   headerBg.style.top = +window.pageYOffset+'px'
   headerBg.style.backgroundPositionY = - +window.pageYOffset/1-300+'px'
-})
+})*/
 
 
 
-let valueDisplays = document.querySelectorAll(".counter-num");
+/*let valueDisplays = document.querySelectorAll(".counter-num");
 let interval = 1000;
 console.log(valueDisplays);
 valueDisplays.forEach((valueDisplay) => {
@@ -96,4 +96,4 @@ valueDisplays.forEach((valueDisplay) => {
       clearInterval(counter);
     }
   }, duration)
-})
+})*/
