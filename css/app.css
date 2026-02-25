@@ -49,11 +49,22 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+nav {
+  display: grid;
+  align-items: center;
+  width: 100%;
+  grid-column: -1/1;
+  background-color: #fafafa;
+  grid-template-columns: subgrid;
+  top: 0;
+  z-index: 10;
+  position: sticky;
+}
 
-nav { 
+.navcontainer { 
   display: flex; 
   align-items: center;
-  grid-column: auto / span 12;
+  grid-column: 2/14;
   background-color: #fafafa;
   justify-content: space-between;
   position: sticky;
@@ -92,11 +103,11 @@ nav img.dark{
   justify-content: left;
   margin: 0;
   height: 100%;
-  
+  grid-column: 2/14;
  
 }
 .navlinks {
-  grid-column: 2/12;
+  grid-column: 2/14;
   display: flex;
   justify-content: right;
   width: 50%;
@@ -156,7 +167,7 @@ nav img.dark{
 
 .headerimg {
   display: flex;
-  grid-column: auto / span 12;
+  grid-column: -1/1;
   width: 100%;
   aspect-ratio: 16/9;
   
@@ -244,12 +255,11 @@ body{
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(12, [col-start] 1fr);
+
+  grid-template-columns: 10% repeat(12, [col-start] 1fr) 10%;
   
   column-gap: 20px;
-  margin-left: 10%;
-  margin-right: 10%;
-
+  
     
   justify-self: center;
 }
