@@ -10,13 +10,14 @@ html {
   --mainPageColor: #fafafa;
   --mainTextColor: black;
   --mainFooterColor:#fbfbfb;
-  --mainIconColor:
+ 
 }
 
 html.dark {
   --mainPageColor: #292929;
   --mainTextColor: white;
   --mainFooterColor: #292929;
+  
 }
 
 nav {
@@ -223,6 +224,8 @@ nav img.dark{
   margin: 0;
   object-position: top;
   z-index: -1;
+  border-radius: 5%;
+  
 }
 
 .videotext {
@@ -452,6 +455,215 @@ body{
     
   justify-self: center;
 }
+
+
+
+
+.navActive{
+  transform:  translateX(0%);
+}
+
+@keyframes navLinkFade {
+  from { 
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to{
+    opactiy: 1;
+    transform: translateX(0px);
+  }
+}
+.toggle .line1 {
+  translate: 0px 8px;
+ rotate: -45deg;
+
+  transition: translate .25s ease, rotate .25s ease;
+  transition-delay: 0s, .25s;
+}
+.toggle .line2 {
+  transition: opacity 0s;
+  
+  transition-delay: .25s;
+ 
+  opacity: 0 ;
+}
+.toggle .line3 {
+  translate: 0px -8px;
+ rotate: 45deg;
+  transition: translate .25s ease, rotate .25s ease;
+  
+  transition-delay: 0s, .25s;
+  
+}
+*/
+
+
+
+
+/*dark/light toggle animations*/
+.material-symbols-outlined{
+  font-size: 2em;
+  text-align: center ;
+}
+
+.themeToggle{
+  justify-content: center;
+    
+  cursor: pointer;
+  user-select: none;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  padding: 1em;
+  
+}
+
+.themeToggle .lightmodebutton{
+  display: flex;
+  justify-content: center;
+  color: var(--mainTextColor);
+  cursor: pointer;
+  user-select: none;
+  text-align: center;
+ rotate: 0deg;
+ opacity: 100;
+
+  transition:  rotate 1s ease;
+  
+  scale: 0%;
+  width: 0%;
+  position: relative;
+  
+}
+
+.themeToggle.themescale .lightmodebutton  {
+  display: flex;
+  justify-content: center;
+  color:  var(--mainTextColor);
+  cursor: pointer;
+  user-select: none;
+ 
+    rotate: 720deg;
+    opacity: 100;
+    
+  transition:  rotate .5s ease-in;
+  scale: 100%;
+  width: 64px;
+ position: relative;
+}
+
+.themeToggle.themeactive .lightmodebutton  {
+  display: flex;
+  justify-content: center;
+  color: var(--mainTextColor);
+  cursor: pointer;
+  user-select: none;
+ 
+    rotate: 0deg;
+    opacity: 100;
+    
+  transition:  rotate .5s ease-in;
+  scale: 0;
+  width: 0;
+ position: relative;
+}
+
+.themeToggle.themeactive.themescale .lightmodebutton  {
+  display: flex;
+  justify-content: center;
+  color: var(--mainTextColor);
+  cursor: pointer;
+  user-select: none;
+ 
+    rotate: 360deg;
+    opacity: 100;
+    
+  transition:  rotate .5s ease-out;
+  scale: 100%;
+  width: 64px;
+ position: relative;
+}
+
+
+
+
+.themeToggle .darkmodebutton{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color: var(--mainTextColor);
+  cursor: pointer;
+  user-select: none;
+
+  rotate: 0deg;
+  opacity: 100;
+ 
+  transition:  rotate .5s ease-out;
+  scale: 100%;
+  width: 64px;
+  position: relative;
+  
+}
+
+.themeToggle.themeactive .darkmodebutton {
+  display: flex;
+  justify-content: center;
+  color: var(--mainTextColor);
+  cursor: pointer;
+  user-select: none;
+  rotate: 360deg;
+  opacity: 100;
+ 
+  transition:  rotate .5s ease-in;
+  
+   position: relative;
+  scale: 100%;
+  width: 64px;
+ 
+}
+
+.themeToggle.themescale .darkmodebutton {
+  display: flex;
+  justify-content: center;
+  color: var(--mainTextColor);
+  cursor: pointer;
+  user-select: none;
+  rotate: -360deg;
+  opacity: 0;
+ 
+  transition:  rotate 1s ease;
+  scale: 0%;
+   position: relative;
+  width: 0%;
+ 
+}
+
+.themeToggle.themeactive.themescale .darkmodebutton {
+  display: flex;
+  justify-content: center;
+  color: var(--mainTextColor);
+  cursor: pointer;
+  user-select: none;
+  rotate: -360deg;
+  opacity: 0;
+  
+  transition:  rotate 1s ease;
+  scale: 0%;
+   position: relative;
+  width: 0%;
+ 
+}
+
+
+@media screen and (max-width: 1024px){
+ 
+
+}
+@media screen and  (max-width: 850px) {
+
+ 
+}
+
 
 
 /*.banner{
@@ -698,14 +910,7 @@ body{
 
 
 
-@media screen and (max-width: 1024px){
- 
 
-}
-@media screen and  (max-width: 850px) {
-
- 
-}
 
 /*.darkmodeon {
   width: 33.3333%;
@@ -787,199 +992,4 @@ body{
   
   
     
-}
-
-.navActive{
-  transform:  translateX(0%);
-}
-
-@keyframes navLinkFade {
-  from { 
-    opacity: 0;
-    transform: translateX(50px);
-  }
-  to{
-    opactiy: 1;
-    transform: translateX(0px);
-  }
-}
-.toggle .line1 {
-  translate: 0px 8px;
- rotate: -45deg;
-
-  transition: translate .25s ease, rotate .25s ease;
-  transition-delay: 0s, .25s;
-}
-.toggle .line2 {
-  transition: opacity 0s;
-  
-  transition-delay: .25s;
- 
-  opacity: 0 ;
-}
-.toggle .line3 {
-  translate: 0px -8px;
- rotate: 45deg;
-  transition: translate .25s ease, rotate .25s ease;
-  
-  transition-delay: 0s, .25s;
-  
-}
-*/
-
-
-
-
-/*dark/light toggle animations*/
-.material-symbols-outlined{
-  font-size: 2em;
-  text-align: center ;
-}
-
-.themeToggle{
-  justify-content: center;
-    
-  cursor: pointer;
-  user-select: none;
-  text-align: center;
-  align-items: center;
-  display: flex;
-  padding: 1em;
-  
-}
-
-.themeToggle .lightmodebutton{
-  display: flex;
-  justify-content: center;
-  color: var(--mainTextColor);
-  cursor: pointer;
-  user-select: none;
-  text-align: center;
- rotate: 0deg;
- opacity: 100;
-
-  transition:  rotate 1s ease;
-  
-  scale: 0%;
-  width: 0%;
-  position: relative;
-  
-}
-
-.themeToggle.themescale .lightmodebutton  {
-  display: flex;
-  justify-content: center;
-  color:  var(--mainTextColor);
-  cursor: pointer;
-  user-select: none;
- 
-    rotate: 720deg;
-    opacity: 100;
-    
-  transition:  rotate .5s ease-in;
-  scale: 100%;
-  width: 64px;
- position: relative;
-}
-
-.themeToggle.themeactive .lightmodebutton  {
-  display: flex;
-  justify-content: center;
-  color: var(--mainTextColor);
-  cursor: pointer;
-  user-select: none;
- 
-    rotate: 0deg;
-    opacity: 100;
-    
-  transition:  rotate .5s ease-in;
-  scale: 0;
-  width: 0;
- position: relative;
-}
-
-.themeToggle.themeactive.themescale .lightmodebutton  {
-  display: flex;
-  justify-content: center;
-  color: var(--mainTextColor);
-  cursor: pointer;
-  user-select: none;
- 
-    rotate: 360deg;
-    opacity: 100;
-    
-  transition:  rotate .5s ease-out;
-  scale: 100%;
-  width: 64px;
- position: relative;
-}
-
-
-
-
-.themeToggle .darkmodebutton{
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  color: var(--mainTextColor);
-  cursor: pointer;
-  user-select: none;
-
-  rotate: 0deg;
-  opacity: 100;
- 
-  transition:  rotate .5s ease-out;
-  scale: 100%;
-  width: 64px;
-  position: relative;
-  
-}
-
-.themeToggle.themeactive .darkmodebutton {
-  display: flex;
-  justify-content: center;
-  color: var(--mainTextColor);
-  cursor: pointer;
-  user-select: none;
-  rotate: 360deg;
-  opacity: 100;
- 
-  transition:  rotate .5s ease-in;
-  
-   position: relative;
-  scale: 100%;
-  width: 64px;
- 
-}
-
-.themeToggle.themescale .darkmodebutton {
-  display: flex;
-  justify-content: center;
-  color: var(--mainTextColor);
-  cursor: pointer;
-  user-select: none;
-  rotate: -360deg;
-  opacity: 0;
- 
-  transition:  rotate 1s ease;
-  scale: 0%;
-   position: relative;
-  width: 0%;
- 
-}
-
-.themeToggle.themeactive.themescale .darkmodebutton {
-  display: flex;
-  justify-content: center;
-  color: var(--mainTextColor);
-  cursor: pointer;
-  user-select: none;
-  rotate: -360deg;
-  opacity: 0;
-  
-  transition:  rotate 1s ease;
-  scale: 0%;
-   position: relative;
-  width: 0%;
- 
 }
