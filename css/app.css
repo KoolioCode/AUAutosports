@@ -14,9 +14,9 @@ html {
 }
 
 html.dark {
-  --mainPageColor: #292929;
+  --mainPageColor: #121212;
   --mainTextColor: white;
-  --mainFooterColor: #292929;
+  --mainFooterColor: #121212;
   
 }
 
