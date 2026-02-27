@@ -6,8 +6,10 @@
 
 
 
-
-
+const html = document.querySelector('html');
+window.addEventListener("load", () => {
+  html.classList.remove("preload");
+});
 
 
 const navSlide = () => {
@@ -48,7 +50,15 @@ const modeToggle = () => {
 
   const themeToggle = document.querySelector('.themeToggle');
   const html = document.querySelector('html');
-  
+  const checkDarkPreferred = () => window?.matchMedia?.('(prefers-color-scheme:dark)')?.matches ?? false;
+
+  if (checkDarkPreferred()) {
+    html.classList.add('dark');
+    themeToggle.classList.add('themeactive','themescale');
+    document.getElementById("iconI").src = "https://cdn.auburn.edu/assets/icons/social_media/instagram/instagram_white_outline.svg"; 
+    document.getElementById("iconF").src = "https://cdn.auburn.edu/assets/icons/social_media/facebook/facebook_white_outline.svg";
+    document.getElementById("iconL").src = "https://cdn.auburn.edu/assets/icons/social_media/linkedin/linkedin_white_outline.svg";
+  }
   themeToggle.addEventListener('click', () => {
 
     
