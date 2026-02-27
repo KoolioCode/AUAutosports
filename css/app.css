@@ -3,16 +3,21 @@
   animation-duration: 0.001s !important; 
 }
 
+.resize-animation-stopper * {
+  animation: none !important;
+  transition: none !important;
+}
+
 *  {
-    margin: 0;
-    padding: 0;
-    font-family: sans-serif;
-    transition: all .25s;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  transition: all .25s;
     
 }
 
- .disable-transition,
-  .disable-transition::before {
+.disable-transition,
+.disable-transition::before {
   transition: none !important;
 }
 
@@ -37,11 +42,6 @@ body{
   
 }
 
-.noscroll{
-  height: 100%;
-  overflow-y: hidden;
-  margin: 0;
-}
 
 
 .grid {
@@ -229,9 +229,9 @@ nav img.dark{
   
   
   background-color: var(--mainTextColor);
-  transition: translate .25s ease, rotate .25s ease, opacity 0s;
+  transition: translate .125s ease, rotate .125s ease, opacity 0s;
   
-  transition-delay:  .25s, 0s, .25s;
+  transition-delay:  .125s, 0s, .125s;
   
   justify-content: center;
   
@@ -244,9 +244,9 @@ nav img.dark{
   margin: .5em 1em;
   background-color: var(--mainTextColor);
   
-  transition: translate .25s ease, rotate .25s ease, opacity 0s;
+  transition: translate .125s ease, rotate .125s ease, opacity 0s;
   
-  transition-delay:  .25s, 0s, .25s;
+  transition-delay:  .125s, 0s, .125s;
    z-index: 200;
   justify-content: center;
   
@@ -262,9 +262,9 @@ nav img.dark{
   
   
   background-color: var(--mainTextColor);
-  transition: translate .25s ease, rotate .25s ease, opacity 0s;
+  transition: translate .125s ease, rotate .125s ease, opacity 0s;
   
-  transition-delay:  .25s, 0s, .25s;
+  transition-delay:  .125s, 0s, .125s;
   
   justify-content: center;
   
@@ -296,7 +296,7 @@ nav img.dark{
   position: fixed;
   width: 100%;
   height: 100%;
-  object-fit:fill;
+  object-fit:cover;
   margin: 0;
   object-position: top;
   z-index: -1;
@@ -523,9 +523,6 @@ a:active { text-decoration: none; }
 
 
 
-.navActive{
-  transform:  translateX(0%);
-}
 
 
 
@@ -535,13 +532,13 @@ a:active { text-decoration: none; }
   translate: 0 calc(3px + .5em);
   rotate: -45deg;
 
-  transition: translate .25s ease, rotate .25s ease;
-  transition-delay: 0s, .25s;
+  transition: translate .125s ease, rotate .125s ease;
+  transition-delay: 0s, .125s;
 }
 .toggle div.line2 {
   transition: opacity 0s;
   
-  transition-delay: .25s;
+  transition-delay: .125s;
   z-index: 200;
   opacity: 0;
 }
@@ -550,9 +547,9 @@ a:active { text-decoration: none; }
   translate: 0 calc(-3px - .5em);
   
   rotate: 45deg;
-  transition: translate .25s ease, rotate .25s ease;
+  transition: translate .125s ease, rotate .125s ease;
   
-  transition-delay: 0s, .25s;
+  transition-delay: 0s, .125s;
   
 }
 */
@@ -745,6 +742,8 @@ and (max-width : 480px){
     justify-self: center;
   }
 
+  
+
   .ftlogo img {
    
     width: 300px;
@@ -769,6 +768,12 @@ and (max-width : 680px){
     display:block;
     margin-left: calc(50% - (25px + 2em)/2);
   }
+   
+  .noscroll{
+    height: 100%;
+    overflow-y: hidden;
+    margin: 0;
+  }
 
   nav {
 
@@ -782,31 +787,57 @@ and (max-width : 680px){
     display: none;
   }
 
+  .navcontainer {
+    grid-column: -1/1;
+  }
+
   .navpages {
     position: absolute;
     right: 0px;
-    height: calc(100vh - (75px+3em));
-    top:  calc(50px + .5em);
+    height: calc(100vh - 9px - 3em);
+    top:  calc( 9px + 3em);
     background-color: var(--mainPageColor);
     display: block;
     flex-direction: column;
     align-items: center;
-    width: 100%;
-    transform: translateX(0%);
-    transition: transform 0.5s ease-in-out;
+    width: 100vw;
+    
+    transform: translateX(100%);
+    transition: transform 0.25s ease-in-out;
     justify-content: space-evenly;
-    grid-column: none;
+    
     
   }
 
+  .navActive{
+    transform: translateX(0%);
+  }
+
+
   
   .navpages a {
-    align-items: center center;
+    align-items: center;
     padding-top: 1em;
     padding-bottom: 1em;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
     
-    height: 4fr;
+   
     
+  }
+  .navpages li {
+    height: 25%;
+    align-content: center;
+    
+  }
+
+  .headerimg {
+  
+   
+
+    height: calc(100vh - 3px - 3em) !important;
+  
   }
 
   
