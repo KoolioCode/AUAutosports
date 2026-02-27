@@ -527,16 +527,7 @@ a:active { text-decoration: none; }
   transform:  translateX(0%);
 }
 
-@keyframes navLinkFade {
-  from { 
-    opacity: 0;
-    transform: translateX(50px);
-  }
-  to{
-    opactiy: 1;
-    transform: translateX(0px);
-  }
-}
+
 
 
 
@@ -794,29 +785,25 @@ and (max-width : 680px){
   .navpages {
     position: absolute;
     right: 0px;
-    height: calc(100vh - 50px - 1em);
+    height: calc(100vh - (75px+3em));
     top:  calc(50px + .5em);
     background-color: var(--mainPageColor);
     display: block;
     flex-direction: column;
     align-items: center;
-    width: 50%;
-    transform: translateX(10%);
+    width: 100%;
+    transform: translateX(0%);
     transition: transform 0.5s ease-in-out;
     justify-content: space-evenly;
     grid-column: none;
     
   }
 
-  .navpages li {
-    opacity: 10;
-    border-radius: 50%;
-    
-  }
+  
   .navpages a {
     align-items: center center;
-    padding-top: calc(1fr - 5px);
-    padding-bottom: calc(1fr - 5px);
+    padding-top: 1em;
+    padding-bottom: 1em;
     
     height: 4fr;
     
