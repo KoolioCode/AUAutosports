@@ -30,11 +30,30 @@ html.dark {
   
 }
 
-/*(default) 	Mobile-portrait
-min-width: 480px 	Mobile-landscape (and larger)
-min-width: 768px 	Tablet-portrait (and larger)
-min-width: 992px 	Tablet-landscape (and larger)
-min-width: 1200px 	Laptops (and langer)*/
+body{
+  margin: auto;
+  background-color: var(--mainPageColor);
+  overflow-x: hidden;
+  
+}
+
+.noscroll{
+  height: 100%;
+  overflow-y: hidden;
+  margin: 0;
+}
+
+
+.grid {
+  display: grid;
+
+  grid-template-columns: 10% repeat(12, [col-start] 1fr) 10%;
+  
+  column-gap: 20px;
+  
+    
+  justify-self: center;
+}
 
 nav {
   display: grid;
@@ -192,18 +211,24 @@ nav img.dark{
   color: var(--mainTextColor);
   margin: 0;
 }
+
 .burger {
   display: none;
   cursor: pointer;
   margin: 0;
+  
+  
 }
-.burger div{
+
+
+.burger div.line1{
   
   width: 25px;
   height: 3px;
-  margin: 0;
+  margin: 1em 1em .5em ;
   
   
+  background-color: var(--mainTextColor);
   transition: translate .25s ease, rotate .25s ease, opacity 0s;
   
   transition-delay:  .25s, 0s, .25s;
@@ -211,9 +236,44 @@ nav img.dark{
   justify-content: center;
   
 }
+
+.burger div.line2{
+  
+  width: 25px;
+  height: 3px;
+  margin: .5em 1em;
+  background-color: var(--mainTextColor);
+  
+  transition: translate .25s ease, rotate .25s ease, opacity 0s;
+  
+  transition-delay:  .25s, 0s, .25s;
+   z-index: 200;
+  justify-content: center;
+  
+}
+
+
+.burger div.line3{
+  
+  width: 25px;
+  height: 3px;
+ 
+  margin: .5em 1em 1em ;
+  
+  
+  background-color: var(--mainTextColor);
+  transition: translate .25s ease, rotate .25s ease, opacity 0s;
+  
+  transition-delay:  .25s, 0s, .25s;
+  
+  justify-content: center;
+  
+}
+
 .navActive{
   transform: translateX(0%);
 }
+
 .linktext {
   transition: .25s ease;
   margin: 0;
@@ -293,7 +353,7 @@ footer {
   display: flex;
   
   align-items: center;
-  width: 20%;
+  width: 400px;
  
   padding: 1em;
   justify-content: center;
@@ -315,6 +375,7 @@ footer {
   margin: 0;
   
 }
+
 .ftpages a{
   font-weight: 600;
   text-decoration: none;
@@ -352,12 +413,10 @@ footer {
   place-content: center;
   letter-spacing: 2px;
   text-align: center;
- 
   display: block;
   height: 30px;
   padding: 1em;
   white-space: nowrap;
-  
   color: var(--mainTextColor);
   margin: 0;
 }
@@ -390,6 +449,7 @@ footer {
   justify-content: center;
   margin: 0;
   padding-bottom: 5em;
+  
   
 }
 .ftcopyright t {
@@ -458,30 +518,7 @@ a:active { text-decoration: none; }
 
 
 
-body{
-  margin: auto;
-  background-color: var(--mainPageColor);
-  overflow-x: hidden;
-  transition: all .5s;
-}
 
-.noscroll{
-  height: 100%;
-  overflow-y: hidden;
-  margin: 0;
-}
-
-
-.grid {
-  display: grid;
-
-  grid-template-columns: 10% repeat(12, [col-start] 1fr) 10%;
-  
-  column-gap: 20px;
-  
-    
-  justify-self: center;
-}
 
 
 
@@ -500,23 +537,28 @@ body{
     transform: translateX(0px);
   }
 }
-.toggle .line1 {
-  translate: 0px 8px;
- rotate: -45deg;
+
+
+
+.toggle div.line1 {
+  translate: 0 calc(3px + .5em);
+  rotate: -45deg;
 
   transition: translate .25s ease, rotate .25s ease;
   transition-delay: 0s, .25s;
 }
-.toggle .line2 {
+.toggle div.line2 {
   transition: opacity 0s;
   
   transition-delay: .25s;
- 
-  opacity: 0 ;
+  z-index: 200;
+  opacity: 0;
 }
-.toggle .line3 {
-  translate: 0px -8px;
- rotate: 45deg;
+.toggle div.line3 {
+  
+  translate: 0 calc(-3px - .5em);
+  
+  rotate: 45deg;
   transition: translate .25s ease, rotate .25s ease;
   
   transition-delay: 0s, .25s;
@@ -683,13 +725,142 @@ body{
 }
 
 
-@media screen and (max-width: 1024px){
- 
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+  /* Styles */
+}
+
+
+/* Smartphones (landscape) ----------- */
+@media only screen 
+and (min-width : 321px) {
+  /* Styles */
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen 
+and (max-width : 480px){
+
+  .grid {
+    display: grid;
+
+    grid-template-columns: 16px repeat(12, [col-start] 1fr) 16px;
+  
+    column-gap: 20px;
+  
+    
+    justify-self: center;
+  }
+
+  .ftlogo img {
+   
+    width: 300px;
+  
+    
+  }
+  .ftpages a{
+
+    font-size: 0.75em;
+    
+  }
+
+  
 
 }
-@media screen and  (max-width: 850px) {
 
- 
+@media only screen 
+and (max-width : 680px){
+
+  .burger {
+
+    display:block;
+    margin-left: calc(50% - (25px + 2em)/2);
+  }
+
+  nav {
+
+    align-content: stretch;
+    justify-content: space-between;
+    
+  }
+
+  
+  .navlogo {
+    display: none;
+  }
+
+  .navpages {
+    position: absolute;
+    right: 0px;
+    height: calc(100vh - 50px - 1em);
+    top:  calc(50px + .5em);
+    background-color: var(--mainPageColor);
+    display: block;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    transform: translateX(10%);
+    transition: transform 0.5s ease-in-out;
+    justify-content: space-evenly;
+    grid-column: none;
+    
+  }
+
+  .navpages li {
+    opacity: 10;
+    border-radius: 50%;
+    
+  }
+  .navpages a {
+    align-items: center center;
+    padding-top: calc(1fr - 5px);
+    padding-bottom: calc(1fr - 5px);
+    
+    height: 4fr;
+    
+  }
+
+  
+
+}
+
+
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) {
+  /* Styles */
+}
+
+/* iPads (landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape) {
+  /* Styles */
+}
+
+/* iPads (portrait) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) {
+  /* Styles */
+}
+
+/* Desktops and laptops ----------- */
+@media only screen 
+and (min-width : 1224px) {
+  /* Styles */
+}
+
+/* Large screens ----------- */
+@media only screen 
+and (min-width : 1824px) {
+  /* Styles */
 }
 
 

@@ -14,8 +14,8 @@ window.addEventListener("load", () => {
 
 const navSlide = () => {
   const burger = document.querySelector('.burger')
-  const nav = document.querySelector('.navlinks');
-  const navLinks = document.querySelectorAll('.navlinks li');
+  const nav = document.querySelector('.navpages');
+  const navLinks = document.querySelectorAll('.navpages li');
   const bodyscroll = document.querySelector('body')
  
    
@@ -37,9 +37,9 @@ const navSlide = () => {
     });
     burger.classList.toggle('toggle');
     
-    document.body.scrollIntoView({
+    /*document.body.scrollIntoView({
       behavior: "smooth",
-    }); 
+    }); */
   }); 
 }
 
