@@ -790,6 +790,68 @@ and (max-width : 680px){
   .navcontainer {
     grid-column: -1/1;
   }
+   @keyframes navSlideUp {
+    0%{
+        transform: translateX(0%);
+        animation-timing-function: ease;
+        animation-duration: .25s;
+    }
+
+    25%{
+        transform: translateX(25%) ;
+        animation-timing-function: ease;
+        animation-duration: .25s;
+    }
+
+    50%{
+        transform: translateX(50%) ;
+        animation-timing-function: ease;
+        animation-duration: .25s;
+    }
+
+    75%{
+        transform: translateX(75%) ;
+        animation-timing-function: ease;
+        animation-duration: .25s;
+    }
+
+    100%{
+        transform: translateX(100%) ;
+        animation-timing-function: ease;
+        animation-duration: .25s;
+    }
+  }
+  @keyframes navSlideDown {
+    0%{
+        transform: translateX(100%);
+        animation-timing-function: ease;
+        animation-duration: .25s;
+    }
+
+    25%{
+        transform: translateX(75%) ;
+        animation-timing-function: ease;
+        animation-duration: .25s;
+    }
+
+    50%{
+        transform: translateX(50%) ;
+        animation-timing-function: ease;
+        animation-duration: .25s;
+    }
+
+    75%{
+        transform: translateX(25%) ;
+        animation-timing-function: ease;
+        animation-duration: .25s;
+    }
+
+    100%{
+        transform: translateX(0%) ;
+        animation-timing-function: ease;
+        animation-duration: .25s;
+    }
+  }
 
   .navpages {
     position: absolute;
@@ -802,28 +864,19 @@ and (max-width : 680px){
     align-items: center;
     width: 100vw;
     
-    transform: translateX(100%) ;
+    animation: navSlideUp 1s ;
     
-    transition: transform 1s steps(4, end) ;
     
-    transition-property: transform;
+    
+   
     justify-content: space-evenly;
     
     
   }
 
-  @keyframes navSlideDown {
-    from{
-        transform: translateX(100%);
-    }
-
-    to{
-        transform: translateX(75%) ;
-    }
-  }
-
   .navActive{
-    transform: translateX(0%);
+    
+    animation: navSlideDown 1s;
   }
 
 
