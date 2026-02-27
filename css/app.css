@@ -802,8 +802,11 @@ and (max-width : 680px){
     align-items: center;
     width: 100vw;
     
-    transform: translateX(100%);
-    transition: transform 0.25s ease-in-out;
+    transform: translateX(100%) ;
+    
+    transition: transform 1s steps(4, end) ;
+    
+    transition-property: transform;
     justify-content: space-evenly;
     
     
@@ -822,15 +825,21 @@ and (max-width : 680px){
     justify-content: center;
     align-content: center;
     text-align: center;
-    
-   
-    
+    opacity: 0;
+    transition: opacity .25s ease;
   }
+
+    .navpages.navActive a{
+
+        opacity: 100;
+        transition: opacity .5s ease;
+    }
   .navpages li {
     height: 25%;
     align-content: center;
     
   }
+  
 
   .headerimg {
   
