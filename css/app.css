@@ -1075,14 +1075,6 @@ and (max-width : 680px){
   }
   
   
- 
- 
-
- 
-
-  
-
-  
   .navpages a {
     align-items: center;
     padding-top: 1em;
@@ -1094,11 +1086,6 @@ and (max-width : 680px){
     transition: opacity .25s ease;
   }
 
-  .navpages.navActive1.navActive2.navActive3.navActive4 a{
-
-    opacity: 100;
-    transition: opacity .5s ease;
-  }
 
   .navpages li {
     height: 25%;
@@ -1121,40 +1108,6 @@ and (max-width : 680px){
 
 
 
-/* iPads (portrait and landscape) ----------- */
-@media only screen 
-and (min-device-width : 768px) 
-and (max-device-width : 1024px) {
-  /* Styles */
-}
-
-/* iPads (landscape) ----------- */
-@media only screen 
-and (min-device-width : 768px) 
-and (max-device-width : 1024px) 
-and (orientation : landscape) {
-  /* Styles */
-}
-
-/* iPads (portrait) ----------- */
-@media only screen 
-and (min-device-width : 768px) 
-and (max-device-width : 1024px) 
-and (orientation : portrait) {
-  /* Styles */
-}
-
-/* Desktops and laptops ----------- */
-@media only screen 
-and (min-width : 1224px) {
-  /* Styles */
-}
-
-/* Large screens ----------- */
-@media only screen 
-and (min-width : 1824px) {
-  /* Styles */
-}
 
 
 
