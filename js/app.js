@@ -17,9 +17,12 @@ window.addEventListener("resize", () => {
   const burger = document.querySelector('.burger')
   const nav = document.querySelector('.navpages');
   const bodyscroll = document.querySelector('body')
-  
+
   if (window.screen.availWidth > 680){
-    nav.classList.remove('navActive'); 
+    nav.classList.remove('navActive1'); 
+    nav.classList.remove('navActive2'); 
+    nav.classList.remove('navActive3'); 
+    nav.classList.remove('navActive4'); 
     bodyscroll.classList.remove('noscroll');
     burger.classList.remove('toggle');
   }
@@ -44,7 +47,16 @@ const navSlide = () => {
 
       
 
-      nav.classList.toggle('navActive');
+      nav.classList.toggle('navActive1');
+      setTimeout(() => {
+        nav.classList.toggle('navActive2');
+      }, 125);
+      setTimeout(() => {
+        nav.classList.toggle('navActive3');
+      }, 250);
+      setTimeout(() => {
+        nav.classList.toggle('navActive4');
+      }, 375);
       
       bodyscroll.classList.toggle('noscroll');
 

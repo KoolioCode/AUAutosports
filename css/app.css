@@ -50,7 +50,7 @@ body{
   grid-template-columns: 10% repeat(12, [col-start] 1fr) 10%;
   
   column-gap: 20px;
-  
+    width: 100vw;
     
   justify-self: center;
 }
@@ -767,6 +767,7 @@ and (max-width : 680px){
 
     display:block;
     margin-left: calc(50% - (25px + 2em)/2);
+    z-index: 200;
   }
    
   .noscroll{
@@ -779,7 +780,7 @@ and (max-width : 680px){
 
     align-content: stretch;
     justify-content: space-between;
-    
+    z-index: 500;
   }
 
   
@@ -790,68 +791,7 @@ and (max-width : 680px){
   .navcontainer {
     grid-column: -1/1;
   }
-   @keyframes navSlideUp {
-    0%{
-        transform: translateX(0%);
-        animation-timing-function: ease;
-        animation-duration: .25s;
-    }
 
-    25%{
-        transform: translateX(25%) ;
-        animation-timing-function: ease;
-        animation-duration: .25s;
-    }
-
-    50%{
-        transform: translateX(50%) ;
-        animation-timing-function: ease;
-        animation-duration: .25s;
-    }
-
-    75%{
-        transform: translateX(75%) ;
-        animation-timing-function: ease;
-        animation-duration: .25s;
-    }
-
-    100%{
-        transform: translateX(100%) ;
-        animation-timing-function: ease;
-        animation-duration: .25s;
-    }
-  }
-  @keyframes navSlideDown {
-    0%{
-        transform: translateX(100%);
-        animation-timing-function: ease;
-        animation-duration: .25s;
-    }
-
-    25%{
-        transform: translateX(75%) ;
-        animation-timing-function: ease;
-        animation-duration: .25s;
-    }
-
-    50%{
-        transform: translateX(50%) ;
-        animation-timing-function: ease;
-        animation-duration: .25s;
-    }
-
-    75%{
-        transform: translateX(25%) ;
-        animation-timing-function: ease;
-        animation-duration: .25s;
-    }
-
-    100%{
-        transform: translateX(0%) ;
-        animation-timing-function: ease;
-        animation-duration: .25s;
-    }
-  }
 
   .navpages {
     position: absolute;
@@ -864,21 +804,283 @@ and (max-width : 680px){
     align-items: center;
     width: 100vw;
     
-    animation: navSlideUp 1s ;
-    
-    
-    
+    transform: translateY(-100%);
+    transition: transform .125s ease;
+    z-index: 10;
    
     justify-content: space-evenly;
     
     
   }
 
-  .navActive{
-    
-    animation: navSlideDown 1s;
+  .navpages.navActive1{
+    transform: translateY(-75%);
+    transition: transform .125s ease
   }
 
+  .navpages.navActive1.navActive2{
+    transform: translateY(-50%);
+    transition: transform .125s ease
+  }
+
+  .navpages.navActive1.navActive2.navActive3{
+    transform: translateY(-25%);
+    transition: transform .125s ease
+  }
+
+  .navpages.navActive1.navActive2.navActive3.navActive4{
+    transform: translateY(0%);
+    transition: transform .125s ease
+  }
+
+  .navpages.navActive4 {
+    transform: translateY(-75%);
+    transition: transform .125s ease
+  }
+
+  .navpages.navActive3.navActive4 {
+    transform: translateY(-50%);
+    transition: transform .125s ease
+  }
+
+  .navpages.navActive2.navActive3.navActive4 {
+    transform: translateY(-25%);
+    transition: transform .125s ease
+  }
+
+
+  .first{
+    transform: translateY(0%);
+    opacity: 0;
+    transition: transform .125s ease opacity .125s ease;
+    transition-delay: .0625s;
+    transition-property: transform;
+    
+    
+  }
+
+  
+  .navpages.navActive1 .first{
+    transform: translateY(300%);
+    opacity: 100;
+    transition: transform .125s ease opacity .125s ease;
+    transition-delay: .0625s;
+    transition-property: opacity;
+  }
+  .navpages.navActive1.navActive2 .first{
+    transform: translateY(200%);
+    opacity: 100;
+    transition: transform .125s ease
+
+  }
+  .navpages.navActive1.navActive2.navActive3 .first{
+    transform: translateY(100%);
+    opacity: 100;
+    transition: transform .125s ease
+
+  }
+  .navpages.navActive1.navActive2.navActive3.navActive4 .first{
+    transform: translateY(0%);
+    opacity: 100;
+    transition: transform .125s ease
+
+  }
+
+  .navpages.navActive2.navActive3.navActive4 .first{
+    transform: translateY(100%);
+    opacity: 100;
+    transition: transform .125s ease
+  }
+
+  .navpages.navActive3.navActive4 .first {
+    transform: translateY(200%);
+    opacity: 100;
+    transition: transform .125s ease
+  }
+
+  .navpages.navActive4 .first{
+    transform: translateY(300%);
+    opacity: 100;
+    transition: transform .125s ease
+    
+  }
+
+  
+
+  
+
+
+
+
+  .second{
+    transform: translateY(0%);
+    opacity: 0;
+    transition: transform .125s ease opacity .125s ease;
+  }
+  .navpages.navActive1 .second{
+    transform: translateY(200%);
+    transition: transform .125s ease;
+    opacity: 0;
+
+  }
+  .navpages.navActive1.navActive2 .second{
+    transform: translateY(200%);
+    opacity: 100;
+    transition: transform .125s ease opacity .0625s ease;
+    transition-delay: .0625s;
+    transition-property: opacity;
+
+  }
+  .navpages.navActive1.navActive2.navActive3 .second{
+    transform: translateY(100%);
+    opacity: 100;
+    transition: transform .125s ease;
+
+  }
+  .navpages.navActive1.navActive2.navActive3.navActive4 .second{
+    transform: translateY(0%);
+    opacity: 100;
+    transition: transform .125s ease;
+
+  }
+  
+  
+  .navpages.navActive2.navActive3.navActive4 .second{
+    transform: translateY(100%);
+    opacity: 100;
+    transition: transform .125s ease opacity .125s ease;
+  }
+
+  .navpages.navActive3.navActive4 .second {
+
+    transform: translateY(200%);
+    opacity: 100;
+    transition: transform .125s ease;
+    
+  }
+
+  .navpages.navActive4 .second {
+
+    transform: translateY(200%);
+    opacity: 0;
+    transition: transform .0625s ease;
+    
+  }
+
+
+  .third{
+    transform: translateY(0%);
+    opacity: 0;
+    transition: transform .125s ease opacity .125s ease;
+  }
+
+
+ .navpages.navActive1 .third{
+    transform: translateY(100%);
+    opacity: 0;
+    transition: transform .125s ease opacity .125s ease;
+
+  }
+  .navpages.navActive1.navActive2 .third{
+    transform: translateY(100%);
+    opacity: 0;
+    transition: transform .125s ease
+
+  }
+  .navpages.navActive1.navActive2.navActive3 .third{
+    transform: translateY(100%);
+    opacity: 100;
+    transition: transform .125s ease opacity .125s ease;
+    transition-delay: .0625s;
+    transition-property: opacity;
+  }
+
+  .navpages.navActive1.navActive2.navActive3.navActive4 .third {
+    transform: translateY(0%);
+    opacity: 100;
+    transition: transform .125s ease
+
+  }
+
+
+  .navpages.navActive2.navActive3.navActive4 .third{
+    transform: translateY(100%);
+    opacity: 100;
+    transition: transform .125s ease
+  }
+  .navpages.navActive3.navActive4 .third {
+    transform: translateY(100%);
+    opacity: 0;
+    transition: transform .0625s ease
+  }
+  .navpages.navActive4 .third{
+    transform: translateY(100%);
+    opacity: 0;
+    transition: transform .125s ease
+    
+  }
+
+
+
+
+
+  .fourth{
+    transform: translateY(0%);
+    opacity: 0;
+    transition: transform .125s ease opacity .125s ease;
+  }
+
+
+ 
+  .navpages.navActive1 .fourth{
+    transform: translateY(0%);
+    opacity: 0;
+    transition: transform .125s ease opacity .125s ease;
+
+  }
+  .navpages.navActive1.navActive2 .fourth{
+    transform: translateY(0%);
+    transition: transform .125s ease;
+    opacity: 0;
+  }
+  .navpages.navActive1.navActive2.navActive3 .fourth{
+    transform: translateY(0%);
+    transition: transform .125s ease;
+    opacity: 0;
+  }
+  .navpages.navActive1.navActive2.navActive3.navActive4 .fourth{
+    transform: translateY(0%);
+    opacity: 100;
+    transition: transform .125s ease opacity .125s ease;
+    transition-delay: .0625s;
+    transition-property: opacity;
+    
+  }
+
+  .navpages.navActive2.navActive3.navActive4 .fourth{
+    transform: translateY(0%);
+    opacity: 0;
+    transition: transform .125s ease opacity .0625s ease;
+  }
+  .navpages.navActive3.navActive4 .fourth {
+    transform: translateY(0%);
+    opacity: 0;
+    transition: transform .125s ease
+  }
+  .navpages.navActive4 .fourth{
+    transform: translateY(0%);
+    opacity: 0;
+    transition: transform .125s ease
+    
+  }
+  
+  
+ 
+ 
+
+ 
+
+  
 
   
   .navpages a {
@@ -888,15 +1090,16 @@ and (max-width : 680px){
     justify-content: center;
     align-content: center;
     text-align: center;
-    opacity: 0;
+    opacity: 100;
     transition: opacity .25s ease;
   }
 
-    .navpages.navActive a{
+  .navpages.navActive1.navActive2.navActive3.navActive4 a{
 
-        opacity: 100;
-        transition: opacity .5s ease;
-    }
+    opacity: 100;
+    transition: opacity .5s ease;
+  }
+
   .navpages li {
     height: 25%;
     align-content: center;
