@@ -548,8 +548,6 @@ a:active { text-decoration: none; }
 
 
 
-
-
 /*dark/light toggle animations*/
 .material-symbols-outlined{
 
@@ -559,51 +557,52 @@ a:active { text-decoration: none; }
 }
 
 .theme-toggle{
-  justify-content: center;
-  width: 48px;
-  grid-column: 2/3;
-  cursor: pointer;
-  user-select: none;
-  text-align: center;
+
   align-items: center;
+  cursor: pointer;
   display: flex;
+  grid-column: 2/3;
+  justify-content: center;
   padding: 1em;
-  
+  text-align: center;
+  user-select: none;
+  width: 48px;
+
 }
 
 .theme-toggle .light-mode-button{
-  display: flex;
-  justify-content: center;
+
   color: var(--mainTextColor);
   cursor: pointer;
-  user-select: none;
+  display: flex;
+  justify-content: center;
   text-align: center;
- rotate: 0deg;
- opacity: 100;
-
-  transition:  rotate 1s ease;
-  
-  scale: 0%;
-  width: 0%;
   position: relative;
+  user-select: none;
+  width: 0%;
+
+  opacity: 100;
+  rotate: 0deg;
+  scale: 0%;
+  transition:  rotate 1s ease;
   
 }
 
 .theme-toggle .dark-mode-button{
+  
+  color: var(--mainTextColor);
+  cursor: pointer;
   display: flex;
   justify-content: center;
   text-align: center;
-  color: var(--mainTextColor);
-  cursor: pointer;
-  user-select: none;
-
-  rotate: 0deg;
-  opacity: 100;
- 
-  transition:  rotate .5s ease-out;
-  scale: 100%;
-  width: 64px;
   position: relative;
+  user-select: none;
+  width: 64px;
+
+  opacity: 100;
+  rotate: 0deg;
+  scale: 100%;
+  transition:  rotate .5s ease-out;
   
 }
 
