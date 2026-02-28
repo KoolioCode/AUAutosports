@@ -1,9 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="preload">
 
 <head>
     <!-- Stylehseets -->
     <link rel="stylesheet" href="https://use.typekit.net/jmr5lxu.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <link rel="stylesheet" href="css\app.css"/>
     
     <!-- Meta Tags -->
@@ -16,57 +18,74 @@
     <title> AUAutosport </title> 
 </head>   
 <body>
-    <div class = grid>
+    <div class = "grid">     
+        <nav>
+          <div class="navcontainer">
+            <div class="navlogo">
+              <a href="index.html">
+                <img class="light" src="assets/nav/AUA Logo.png" alt="logo" >
+              </a>
+            </div>
+            <ul class="navpages">
+              <li class="first"><a class="linktext"href="index.html">Home</a></li>
+              <li class="second"><a class="linktext"href="about.html">About Us</a></li>
+              
             
-        <div class="banner">
-            <div class="nav">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="sponsor.html">Sponsorship</a></li>
-                </ul>
-                <img src="assets/nav/AUA Logo.png" class="Logo" width="200">
+              
+              <li class="third"><a class="linktext"href="gallery.html">Gallery</a></li>
+              <li class="fourth"><a class="linktext"href="contact.html">Contact</a></li>
+            </ul>
+            
+            
+            <div class="burger">
+              <div class="line1"></div>
+              <div class="line2"></div>
+              <div class="line3"></div>
             </div>
+          </div>
+      </nav>
+    
+      <div class = "headerimg">
+        <video autoplay loop muted plays-inline>
+          <source src="assets/videos/AUA Test Lap.mp4" type="video/mp4">
+        </video>
+      </div>
+    
+      <footer>
+        <div class = "ftcontainer">
+          <div class = "ftlogo">
+            <img src="assets/nav/AUA Logo.png" alt="logo">
+          </div>
 
-            <div class="intro">
-                <h1>
-                    Welcome to AUAutosport!
-                </h1>
-                <p>
-                    We drive
-                </p>
+          <ul class="ftpages">
+            <li ><a class="linktext"href="index.html">Home</a></li>
+            <li ><a class="linktext"href="about.html">About Us</a></li>
+            <li ><a class="linktext"href="gallery.html">Gallery</a></li>
+            <li ><a class="linktext"href="contact.html">Contact</a></li>
+          </ul>
+          
+          <ul class="ftlinks">
+            <li><a href="https://www.instagram.com/au_autosport/" target="_blank" rel="noopener noreferrer"> <img src="https://cdn.auburn.edu/assets/icons/social_media/instagram/instagram_blue_outline.svg" id="iconI" alt=""> </a></li>
+            <li><a href="https://www.facebook.com/au_autosport/" target="_blank" rel="noopener noreferrer"> <img src="https://cdn.auburn.edu/assets/icons/social_media/facebook/facebook_blue_outline.svg" id="iconF" alt=""> </a></li>
+            <li><a href="https://www.linkedin/auautosport/" target="_blank" rel="noopener noreferrer"> <img src="https://cdn.auburn.edu/assets/icons/social_media/linkedin/linkedin_blue_outline.svg" id="iconL" alt=""> </a></li>
+          </ul>
+
+          <div class = "fttheme">
+            <div class = "themeToggle">
+              <div class="material-symbols-outlined lightmodebutton">light_mode</div>
+              <div class="material-symbols-outlined active darkmodebutton">dark_mode</div>  
             </div>
+          </div>
 
-        </div>
-
+          <div class = "ftcopyright">
+              <t>Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved</t>
+          </div>
+        </div>  
+      </footer>
     </div>
-
 </body>
 
-<footer>
-    <div class = "ftlogo">
-        <img src="assets/nav/AUA Logo.png" class="Logo">
-    </div>
-    <div class = "ftpages">
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="sponsor.html">Sponsorship</a></li>
-        </ul>
-        
-    </div>
-    <div class = "ftlinks">
-        <ul>
-            <li><a href="https://www.instagram.com/au_autosport/"> <img src="https://cdn.auburn.edu/assets/icons/social_media/instagram/instagram_blue_outline.svg" alt=""> </a></li>
-            <li><!--<a href="https://www.facebook.com/au_autosport/">--> <img src="https://cdn.auburn.edu/assets/icons/social_media/facebook/facebook_blue_outline.svg" alt=""> </a></li>
-            <li><!--<a href="https://www.linkedin/auautosport/">--> <img src="https://cdn.auburn.edu/assets/icons/social_media/linkedin/linkedin_blue_outline.svg" alt=""> </a></li>
-        </ul>
-        
-    </div>
-    <div class = "ftcopyright">
-        <t>Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved</t>
-    </div>
-</footer>
+
 
 <script src="js\app.js"></script>
 

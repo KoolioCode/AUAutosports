@@ -39,10 +39,8 @@ body{
   margin: auto;
   background-color: var(--mainPageColor);
   overflow-x: hidden;
-  
+
 }
-
-
 
 .grid {
   display: grid;
@@ -121,15 +119,14 @@ nav img.dark{
   padding: none;
   z-index: 15;
   margin: 0;
-  
-  
-  
 }
+
 .navpages li {
   list-style: none;
   margin: 0;
   
 }
+
 .navpages a{
   font-weight: 600;
   text-decoration: none;
@@ -804,7 +801,7 @@ and (max-width : 680px){
     align-items: center;
     width: 100vw;
     
-    transform: translateY(-100%);
+    transform: translateY(-115%);
     transition: transform .125s ease;
     z-index: 10;
    

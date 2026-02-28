@@ -1,11 +1,6 @@
+/* JS for AU Autosports website */
 
-
-
-
-
-
-
-
+/* disable animations until page is fully loaded to prevent eye strain */
 const html = document.querySelector('html');
 window.addEventListener("load", () => {
   html.classList.remove("preload");
@@ -18,6 +13,7 @@ window.addEventListener("resize", () => {
   const nav = document.querySelector('.navpages');
   const bodyscroll = document.querySelector('body')
 
+  /* remove nav active classes and noscroll when resizing to prevent nav still being open */
   if (window.screen.availWidth > 680){
     nav.classList.remove('navActive1'); 
     nav.classList.remove('navActive2'); 
@@ -27,6 +23,7 @@ window.addEventListener("resize", () => {
     burger.classList.remove('toggle');
   }
 
+  /* stop animations during resizing to prevent eye strain */
   html.classList.add("resize-animation-stopper");
   clearTimeout(resizeTimer);
   resizeTimer = setTimeout(() => {
@@ -36,17 +33,15 @@ window.addEventListener("resize", () => {
 
 
 const navSlide = () => {
+
   const burger = document.querySelector('.burger')
   const nav = document.querySelector('.navpages');
   const navLinks = document.querySelectorAll('.navpages li');
   const bodyscroll = document.querySelector('body')
- 
-  
-  
+
     burger.addEventListener('click', () => {
 
-      
-
+      /* toggle nav active classes with staggered timing for animation */
       nav.classList.toggle('navActive1');
       setTimeout(() => {
         nav.classList.toggle('navActive2');
@@ -58,24 +53,15 @@ const navSlide = () => {
         nav.classList.toggle('navActive4');
       }, 375);
       
+      /* toggle noscroll on body to prevent scrolling when nav is open */
       bodyscroll.classList.toggle('noscroll');
 
-      navLinks.forEach((link, index) => {
-        if (link.style.animation) {
-          link.style.animation = '';
-        } else {
-          link.style.animation = `navLink Fade 0.5s ease forwards ${index/7 + 0.3}s`;
-        }
-      });
+      /* toggle burger animation */
       burger.classList.toggle('toggle');
       
-      /*document.body.scrollIntoView({
-        behavior: "smooth",
-      }); */
     }); 
   
-   
-  
+     
 }
 
 navSlide();
