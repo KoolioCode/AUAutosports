@@ -444,7 +444,13 @@ nav {
   
 }
 
-.landing-button:hover   { text-decoration: none;  transform:scale(110%); transition: .25s ease; }
+.landing-button:hover   {
+
+  text-decoration: none;  
+  transform:scale(110%); 
+  transition: .25s ease; 
+
+}
 
 
 
