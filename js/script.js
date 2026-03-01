@@ -1,7 +1,4 @@
 /* JS Document for AU Autosports website */
-/* Author: Jonathan Powell-Williams Aka: JonPowWil / Kynan.Fox / The big J */
-/* Last Updated: 2/28/2026 */
-
 
 /* disable animations until page is fully loaded to prevent eye strain */
 const html = document.querySelector('html');
