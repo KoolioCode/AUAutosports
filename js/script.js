@@ -40,7 +40,6 @@ const navSlide = () => {
 
   const burger = document.querySelector('.burger')
   const nav = document.querySelector('.nav-pages');
-  const navLinks = document.querySelectorAll('.nav-pages li');
   const bodyscroll = document.querySelector('body')
 
   burger.addEventListener('click', () => {
