@@ -2,11 +2,13 @@
 /* Author: Jonathan Powell-Williams Aka: JonPowWil / Kynan.Fox / The big J */
 /* Last Updated: 2/28/2026 */
 
+
 /* disable animations until page is fully loaded to prevent eye strain */
 const html = document.querySelector('html');
 window.addEventListener("load", () => {
   html.classList.remove("preload");
 });
+
 
 /* stop animations and nav during resizing to prevent eye strain */
 let resizeTimer;
@@ -32,6 +34,7 @@ window.addEventListener("resize", () => {
   resizeTimer = setTimeout(() => {
     html.classList.remove("resize-animation-stopper");
   }, 250);
+
 });
 
 
@@ -46,7 +49,9 @@ const navSlide = () => {
   burger.addEventListener('click', () => {
 
     /* toggle nav active classes with staggered timing for animation */
-    nav.classList.toggle('nav-active-1');
+    setTimeout(() => {
+      nav.classList.toggle('nav-active-1');
+    }, 0);
     setTimeout(() => {
       nav.classList.toggle('nav-active-2');
     }, 125);
@@ -63,9 +68,11 @@ const navSlide = () => {
     /* toggle burger animation */
     burger.classList.toggle('toggle');
     
-  });    
+  });  
+
 }
 navSlide();
+
 
 /* theme toggle and dark mode support */
 const modeToggle = () => {
@@ -109,6 +116,7 @@ const modeToggle = () => {
     }, 125); 
 
   });
+
 }
 modeToggle();
 
