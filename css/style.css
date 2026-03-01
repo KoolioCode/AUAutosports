@@ -118,7 +118,7 @@ nav {
   justify-content: left;
   margin: 0;
   padding: 1em;
- 
+  user-select:none;
 }
 
 .nav-logo a {
@@ -444,7 +444,7 @@ nav {
   
 }
 
-.landing-button:hover  { text-decoration: none;  color: #e86100; transition: .25s ease; }
+.landing-button:hover   { text-decoration: none;  transform:scale(110%); transition: .25s ease; }
 
 
 
@@ -506,6 +506,7 @@ footer {
   margin: 0;
   padding: 1em;
   width: 400px;
+  user-select:none;
 
 }
 
@@ -583,6 +584,7 @@ footer {
   height: 100%;
   justify-content: left;
   margin: 0;
+  user-select:none;
   
 }
 
@@ -667,6 +669,7 @@ a:active { text-decoration: none; }
 
   font-size: 2em;
   text-align: center;
+  user-select:none;
 
 }
 
