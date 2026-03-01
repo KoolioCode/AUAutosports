@@ -425,7 +425,7 @@ nav {
 
 }
 
-.landing-button-text {
+.landing-button-text p {
   
   place-content: center;
   
@@ -440,6 +440,7 @@ nav {
   place-content: center;
   text-align: center;
   text-decoration: none;
+  user-select: none;
   white-space: nowrap;
   
 }
