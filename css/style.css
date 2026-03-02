@@ -66,7 +66,7 @@ body {
   display: grid;
   grid-template-columns: 10% repeat(12, [col-start] 1fr) 10%;
   justify-self: center;
-  width: 100vw;
+  width: 100dvw;
     
 }
 
@@ -313,7 +313,7 @@ nav {
 .landing-header-container {
 
   grid-column: -1/1;
-  height: calc(100vh - 30px - 2em) !important;
+  height: calc(100dvh - 30px - 2em) !important;
 
 }
 
@@ -925,12 +925,12 @@ and (max-width : 680px){
     background-color: var(--mainPageColor);
     display: block;
     flex-direction: column;
-    height: calc(100vh - 9px - 3em);
+    height: calc(100dvh - 9px - 3em);
     justify-content: space-evenly;
     position: absolute;
     right: 0px;
-    top:  calc( 9px + 3em);
-    width: 100vw;
+    top:  calc(9px + 3em);
+    width: 100dvw;
     z-index: 10;
 
     transform: translateY(-115%);
@@ -1287,7 +1287,7 @@ and (max-width : 680px){
 
   .header-img {
 
-    height: calc(100vh - 3px - 3em) !important;
+    height: calc(100dvh - 3px - 3em) !important;
 
   }
 
@@ -1303,7 +1303,7 @@ and (max-width : 680px){
 /*.banner{
     background-image: url(../assets/bg/Website\ pic\ -\ Edited.jpg);
     width: 100%;
-    height: 100vh;
+    height: 100dvh;
     background-size: cover;
     background-position: center;
 }
@@ -1372,7 +1372,7 @@ and (max-width : 680px){
 }
 .bgf{
     width: 100%;
-    height: 100vh;
+    height: 100dvh;
     background-size: cover;
     background-position: center;
 }
@@ -1445,7 +1445,7 @@ and (max-width : 680px){
 }
 .sponsorbanner{
     width: 100%;
-    height: 100vh;
+    height: 100dvh;
     background-size: cover;
     background-position: center;
 }
