@@ -1,16 +1,15 @@
 /* TEAM */
 
-                        
-Your title: Your name.
+Lead Designer: 
+Jonathan Powell-Williams
+powellwilliamsjonathan@gmail.com
+https://www.jonpowwil.com/
+https://www.linkedin.com/in/jonpowwil/
+
+
 
                         
-Site: email, link to a contact form, etc.
 
-                        
-Twitter: your Twitter username.
-
-                        
-Location: City, Country.
 
                             
 
@@ -38,7 +37,7 @@ Name: name or url
 /* SITE */
 
                             
-Last update: YYYY/MM/DD 
+Last update: 2026/03/21 
 
                             
 Standards: HTML5, CSS3,..

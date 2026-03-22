@@ -89,6 +89,7 @@ const modeToggle = () => {
   
   }
 
+
   /* toggle theme and animate theme toggle button */
   themeToggle.addEventListener('click', () => {
 
