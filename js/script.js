@@ -76,9 +76,11 @@ const modeToggle = () => {
   const themeToggle = document.querySelector('.theme-toggle');
   const html = document.querySelector('html');
   const checkDarkPreferred = () => window?.matchMedia?.('(prefers-color-scheme:dark)')?.matches ?? false;
+  var keepTheme =  localStorage.getItem("keepTheme");
+ 
   
   /* check if user has dark mode preference and set theme accordingly on page load */
-  if (checkDarkPreferred()) {
+  if (checkDarkPreferred() && localStorage.getItem("keepTheme") == "f") {
 
     /* set dark mode active classes and icons on page load if user has dark mode preference */
     html.classList.add('dark');
@@ -86,13 +88,20 @@ const modeToggle = () => {
     document.getElementById("icon-i").src = "https://cdn.auburn.edu/assets/icons/social_media/instagram/instagram_white_outline.svg"; 
     document.getElementById("icon-f").src = "https://cdn.auburn.edu/assets/icons/social_media/facebook/facebook_white_outline.svg";
     document.getElementById("icon-l").src = "https://cdn.auburn.edu/assets/icons/social_media/linkedin/linkedin_white_outline.svg";
-  
+    
   }
 
 
   /* toggle theme and animate theme toggle button */
   themeToggle.addEventListener('click', () => {
-
+    if (keepTheme == "t"){
+      keepTheme = "f";
+      localStorage.setItem("keepTheme", keepTheme);
+    }else if (keepTheme == "f"){
+      keepTheme = "t";
+      localStorage.setItem("keepTheme", keepTheme);
+    }
+      
     themeToggle.classList.toggle('theme-active');
     setTimeout(() => {
       
