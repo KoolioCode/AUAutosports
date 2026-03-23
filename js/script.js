@@ -76,7 +76,6 @@ const modeToggle = () => {
   const themeToggle = document.querySelector('.theme-toggle');
   const html = document.querySelector('html');
   const checkDarkPreferred = () => window?.matchMedia?.('(prefers-color-scheme:dark)')?.matches ?? false;
-  
   var keepTheme =  localStorage.getItem("keepTheme");
  
   
