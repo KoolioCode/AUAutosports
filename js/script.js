@@ -80,7 +80,7 @@ const modeToggle = () => {
  
   
   /* check if user has dark mode preference and set theme accordingly on page load */
-  if (checkDarkPreferred() && localStorage.getItem("keepTheme") == "f") {
+  if (checkDarkPreferred() && localStorage.getItem("keepTheme") == "t") {
 
     /* set dark mode active classes and icons on page load if user has dark mode preference */
     html.classList.add('dark');
