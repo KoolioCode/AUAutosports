@@ -129,6 +129,7 @@ modeToggle();
 if ( document.URL.includes("gallery.html") ) {
   
   const list = document.querySelector(".carousel-list");
+  console.log(list)
   // We want to know the width of one of the items. We'll use this to decide how many pixels we want our carousel to scroll.
   const item = document.querySelector(".carousel-item");
   const itemWidth = item.offsetWidth; 
