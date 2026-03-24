@@ -591,6 +591,76 @@ a.carousel-link:hover  { text-decoration: none;  color: #e86100; transition: .25
 }
 
 
+
+.photogrid {
+
+  grid-column: 2/14;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  
+  padding-bottom: 0px;
+  padding-top: 0px;
+}
+.photocontainer {
+  display: flex;
+  position: relative;
+  width: calc(100% / 3 - calc(20px/3));
+  height: fit-content;
+  
+}
+
+
+/* gallery things*/
+.photocaptionoverlay {
+  
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4) 20px, rgba(0, 0, 0, 0.5));
+  bottom: 0;
+  left: 0;
+  margin: 0;
+  opacity: 0;
+  padding-bottom: 10px;
+  position: absolute;
+  text-align: center;
+  transition: opacity 250ms ease;
+  width: 100%;
+  visibility: visible;
+  
+}
+.photocaptiontext {
+  color: #fff;
+  font-size: 14px;
+  line-height: 17px;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+  position: relative;
+  text-overflow: ellipsis;
+  top: 15px;
+  transition: top 150ms 50ms ease-out;
+  white-space: nowrap;
+  
+}
+.photocontainer:hover .photocaptionoverlay {
+  opacity: 1;
+  transition: opacity 250ms ease-in-out; 
+}
+.photocontainer:hover .photocaptiontext {
+  top: 0;
+  transition: top 250ms 50ms ease-out; 
+}
+
+.photos{
+  
+  max-width: 100%;
+  display: flex;
+  margin: auto;
+  
+
+}
+
 /* Footer styles */
 footer {
 
