@@ -1,5 +1,5 @@
 /* JS Document for AU Autosports website */
-import Masonry from "masonry-layout";
+
 /* disable animations until page is fully loaded to prevent eye strain */
 const html = document.querySelector('html');
 window.addEventListener("load", () => {

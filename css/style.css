@@ -594,16 +594,10 @@ a.carousel-link:hover  { text-decoration: none;  color: #e86100; transition: .25
 
 .photogrid {
   
- 
-  
   grid-column: 2/14; 
- 
  
 }
 
-.grid-size{
-  width: calc(100% / 3 - calc(20px/3));
-}
 
 .photocontainer {
   display: inline-block;
