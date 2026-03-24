@@ -572,10 +572,11 @@ a.carousel-link:hover  { text-decoration: none;  color: #e86100; transition: .25
   transform: translateY(-50%);
 }
 
+
+
 .carousel-button-previous {
   left: 1.5rem;
-
-  transform: rotate(180deg);
+  
 }
 
 .carousel-button-next {
@@ -1406,6 +1407,24 @@ and (max-width : 750px){
 
   }
 
+  .carousel-list {
+    /* ... */
+    
+    /* Hide scrollbar in Firefox */
+    scrollbar-width: none;
+
+    /* Hide scrollbar in IE and Edge */
+    -ms-overflow-style: none;
+  }
+
+  /* Hide scrollbar in webkit */
+  .carousel-list::-webkit-scrollbar {
+    display: none;
+  }
+
+  .carousel-button {
+    display: none;
+  }
 }
 
 
