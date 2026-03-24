@@ -593,9 +593,17 @@ a.carousel-link:hover  { text-decoration: none;  color: #e86100; transition: .25
 
 
 .photogrid {
-
-  grid-column: 2/14;
-  display: flex;
+  
+  -webkit-column-count: 3; /* Chrome, Safari, Opera */
+  -moz-column-count: 3; /* Firefox */
+  column-count: 3;
+  -webkit-column-gap: 10px; /* Chrome, Safari, Opera */
+  -moz-column-gap: 10px; /* Firefox */
+  column-gap: 10px;
+  flex-direction: row;
+  
+  grid-column: 2/14; 
+ 
   flex-wrap: wrap;
   gap: 10px;
   margin-left: auto;
@@ -603,13 +611,15 @@ a.carousel-link:hover  { text-decoration: none;  color: #e86100; transition: .25
   
   padding-bottom: 0px;
   padding-top: 0px;
+  
 }
 .photocontainer {
-  display: flex;
+  display: inline-block;
   position: relative;
-  width: calc(100% / 3 - calc(20px/3));
-  height: fit-content;
   
+  height: fit-content;
+  flex-direction: row;
+ 
 }
 
 
@@ -657,7 +667,7 @@ a.carousel-link:hover  { text-decoration: none;  color: #e86100; transition: .25
   max-width: 100%;
   display: flex;
   margin: auto;
-  
+  flex-direction: row;
 
 }
 
