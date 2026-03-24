@@ -518,7 +518,7 @@ nav {
 .carousel-item {
   flex-shrink: 0;
   width: 80%;
-  height: calc(100dvh - 96px - 4em);
+  height: calc(100vh - 96px - 4em);
 
   background-color: #FFF;
 
