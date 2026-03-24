@@ -1051,7 +1051,7 @@ and (max-width : 750px){
     justify-content: space-evenly;
     position: absolute;
     right: 0px;
-    top:  calc(9px + 3em);
+    top:  calc(9px + 3em + .5em);
     width: 100dvw;
     z-index: 10;
 
