@@ -568,8 +568,14 @@ a.carousel-link:hover  { text-decoration: none;  color: #e86100; transition: .25
   width: 3rem;
   height: 3rem;
   background-color: #FFF;
-  border-width: 4px;
+  border-width: 0px;
+  border-color: #121212;
   transform: translateY(-50%);
+}
+.carousel-button:hover{
+  background-color: #e86100;
+  transition: .25s ease;
+  color: #FFF;
 }
 
 
