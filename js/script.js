@@ -76,7 +76,7 @@ const modeToggle = () => {
   const themeToggle = document.querySelector('.theme-toggle');
   const html = document.querySelector('html');
   const checkDarkPreferred = () => window?.matchMedia?.('(prefers-color-scheme:dark)')?.matches ?? false;
-  var keepTheme =  localStorage.getItem("keepTheme") ?? "f";
+  var keepTheme =  localStorage.getItem("keepTheme");
  
   
   /* check if user has dark mode preference and set theme accordingly on page load */
@@ -126,6 +126,22 @@ const modeToggle = () => {
 }
 modeToggle();
 
+if ( document.URL.includes("gallery.html") ) {
+  
+  const list = document.querySelector(".carousel-list");
+  // We want to know the width of one of the items. We'll use this to decide how many pixels we want our carousel to scroll.
+  const item = document.querySelector(".carousel-item");
+  const itemWidth = item.offsetWidth; 
+
+  function handleClick(direction) {
+    // Based on the direction we call `scrollBy` with the item width we got earlier
+    if(direction === "previous") {
+      list.scrollBy({ left: -itemWidth, behavior: "smooth" });
+    } else {
+      list.scrollBy({ left: itemWidth, behavior: "smooth" });
+    }
+  }
+}
 
 
 
