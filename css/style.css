@@ -576,6 +576,7 @@ a.carousel-link:hover  { text-decoration: none;  color: #e86100; transition: .25
   background-color: #e86100;
   transition: .25s ease;
   color: #FFF;
+  cursor: pointer;
 }
 
 
