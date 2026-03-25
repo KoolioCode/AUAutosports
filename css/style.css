@@ -1506,6 +1506,9 @@ and (max-width : 750px){
   .photocontainer {
     width: calc(100% / 2 - calc(10px/2));
   }
+  .photogridsizer {
+  width: calc(100% / 2 - calc(10px/2));
+}
 }
 
 
