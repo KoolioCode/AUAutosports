@@ -1050,7 +1050,9 @@ and (max-width : 480px){
 
   }
 
-  
+  .photocontainer {
+    width: 100%;
+  }
 
   .ft-logo img {
    
@@ -1499,8 +1501,8 @@ and (max-width : 750px){
     display: none;
   }
 
-  .photogrid {
-    column-count: 1;
+  .photocontainer {
+    width: calc(100% / 2 - calc(20px/2));
   }
 }
 
