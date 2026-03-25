@@ -1076,6 +1076,17 @@ and (max-width : 480px){
 @media only screen 
 and (max-width : 750px)
 and (min-width : 481px){
+
+  .photocontainer {
+    width: calc(100% / 2 - calc(10px/2));
+  }
+  .photogridsizer {
+    width: calc(100% / 2 - calc(10px/2));
+  }
+}
+
+@media only screen 
+and (max-width : 750px){
  
   .no-scroll{
 
@@ -1507,12 +1518,7 @@ and (min-width : 481px){
     display: none;
   }
 
-  .photocontainer {
-    width: calc(100% / 2 - calc(10px/2));
-  }
-  .photogridsizer {
-    width: calc(100% / 2 - calc(10px/2));
-  }
+  
 }
 
 
