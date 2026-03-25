@@ -1,5 +1,6 @@
 /* JS Document for AU Autosports website */
-
+import Masonry from 'masonry-layout'
+import imagesLoaded from 'imagesloaded'
 /* disable animations until page is fully loaded to prevent eye strain */
 const html = document.querySelector('html');
 window.addEventListener("load", () => {
@@ -143,6 +144,19 @@ if ( document.URL.includes("gallery.html") ) {
     }
   }
 }
+
+window.onload = () => {
+  var photogrid = document.querySelector('.photogrid');
+  var masonry = new Masonry( photogrid, {
+  
+    itemSelector: '.photocontainer',
+    columnWidth: 0,
+    gutter: 0
+  
+  });
+  masonry.on('layoutComplete', () => console.log('i guess bro'));
+}
+
 
 
 
