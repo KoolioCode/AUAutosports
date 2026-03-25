@@ -1048,12 +1048,15 @@ and (max-width : 480px){
     column-gap: 20px;
     display: grid;
     grid-template-columns: 16px repeat(12, [col-start] 1fr) 16px;
-    justify-self: center;
+    justify-self: center; 
 
   }
 
   .photocontainer {
     width: 100%;
+  }
+  .photogridsizer {
+    width: calc(100%-0px) ;
   }
 
   .ft-logo img {
@@ -1071,7 +1074,8 @@ and (max-width : 480px){
 }
 
 @media only screen 
-and (max-width : 750px){
+and (max-width : 750px)
+and (min-width : 481px){
  
   .no-scroll{
 
