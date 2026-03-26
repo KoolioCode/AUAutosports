@@ -1856,6 +1856,23 @@ and (max-width : 750px){
   
   
   }
+
+  .social{
+    width: 100%;
+  }
+
+  .lead-name {
+ 
+    font-size: 3vw;
+  
+  }
+  .social-handle{
+ 
+    font-size: 2.5vw;
+  
+  
+  }
+ 
   
 }
 
