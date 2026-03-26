@@ -698,6 +698,51 @@ a.carousel-link:hover  { text-decoration: none;  color: #e86100; transition: .25
   width: 50%;
 }
 
+.error-container{
+  grid-column: 2/14;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.error-header{
+  display: block;
+  font-size: 3vw;
+  text-align: center;
+  width: 100%;
+  padding: 1em;
+  padding-bottom: 0;
+}
+
+.error-caption{
+  display: block;
+  font-size: 1.5vw;
+  text-align: center;
+  width: 100%;
+  padding: 2em;
+}
+
+
+
+.error-button{
+  display: block;
+  width: 25%;
+  margin-left: calc(37.5% - 1em);
+  margin-top: 1em;
+  text-align: center;
+  padding: 1em;
+  background-color: var(--auburnOrange);
+  border-radius: 1em;
+}
+
+.error-link{
+  font-size: 2vw;
+  font-weight: bolder;
+}
+
+a.error-link:link  { text-decoration: none; color: #FFF}
+a.error-link:visited  { text-decoration: none; color: #FFF; }
+a.error-link:hover  { text-decoration: none;  color: #e86100; transition: .25s ease; }
+
 /* Footer styles */
 footer {
 
