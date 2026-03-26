@@ -741,7 +741,7 @@ a.carousel-link:hover  { text-decoration: none;  color: #e86100; transition: .25
 
 a.error-link:link  { text-decoration: none; color: #FFF}
 a.error-link:visited  { text-decoration: none; color: #FFF; }
-a.error-link:hover  { text-decoration: none;  color: #e86100; transition: .25s ease; }
+
 
 /* Footer styles */
 footer {
