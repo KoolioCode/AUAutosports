@@ -732,16 +732,19 @@ a.carousel-link:hover  { text-decoration: none;  color: #e86100; transition: .25
   padding: 1em;
   background-color: var(--auburnOrange);
   border-radius: 1em;
-}
-
-.error-link{
   font-size: 3vw;
   font-weight: bolder;
 }
 
-a.error-link:link  { text-decoration: none; color: #FFF}
-a.error-link:visited  { text-decoration: none; color: #FFF;}
-a.error-link:hover  { text-decoration: none;  color: #FFF;}
+.error-link{
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+
+a.error-button:link  { text-decoration: none; color: #FFF}
+a.error-button:visited  { text-decoration: none; color: #FFF;}
+a.error-button:hover  { text-decoration: none;  color: #FFF; transform:scale(110%); transition: .25s ease; }
 
 /* Footer styles */
 footer {
