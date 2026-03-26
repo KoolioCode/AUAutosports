@@ -738,18 +738,22 @@ a.error-button:hover  { text-decoration: none;  color: #FFF; transform:scale(110
 }
 
 .contact-container{
-  display: flex;
+  display: grid;
   grid-column: 2/14;
+  column-count: 2;
 }
 
 .contact-form{
   display: flex;
-  width: 50%;
+  width: 100%;
+  grid-column: 1;
 }
 .contact-info{
   display: flex;
-  width: 50%;
+  width: 100%;
   flex-wrap: wrap;
+  grid-column: 2;
+  
 }
 
 
@@ -787,6 +791,8 @@ input[type=submit]:hover {
   width: 100%;
   text-align: center;
   display: flex;
+  flex-wrap: wrap;
+  height: fit-content;
 }
 
 
@@ -794,13 +800,74 @@ input[type=submit]:hover {
   width: 100%;
   text-align: center;
   display: flex;
+  flex-wrap: wrap;
+  height: fit-content;
 }
 
 .contact-info-header {
   width: 100%;
 }
 
+.team-leads{
+  display: flex;
+  flex-wrap: wrap;
 
+  justify-content: center;
+}
+
+.lead{
+  display: flex;
+  flex-wrap: nowrap;
+  width: 75%;
+  align-items: center;
+  justify-content: center;
+  height: fit-content;
+}
+
+.team-lead-list{
+  list-style: none;
+}
+
+.lead-photo {
+  width: 25%;
+  height: fit-content;
+  padding: 1em;
+  align-items: center;
+  display: flex;
+}
+.lead-photo img{
+  border-radius: 50%;
+  height: 100%;
+  width: 100%;
+}
+
+.lead-text{
+  padding: 1em;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  height: fit-content;
+}
+
+.lead-name {
+  text-align: left;
+  font-size: 2vw;
+  font-weight: bolder;
+  width: 100%;
+}
+.lead-role{
+  text-align: left;
+  font-size: 1vw;
+  width: 100%;
+  
+}
+.lead-email{
+  text-align: left;
+  font-size: 1vw;
+  text-decoration: underline;
+  width: 100%;
+  
+}
 
 
 /* Footer styles */
