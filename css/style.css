@@ -809,6 +809,7 @@ input[type=submit]:hover {
 
 .contact-info-header-leads {
   width: 100%;
+  font-size: 2vw;
 }
 
 .team-leads{
@@ -887,6 +888,7 @@ input[type=submit]:hover {
 .contact-info-header-socials {
   width: 100%;
   padding-top: 2em;
+  font-size: 2vw;
 }
 
 .team-socials {
