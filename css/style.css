@@ -36,6 +36,7 @@ html {
   --mainPageColor: #fafafa;
   --mainTextColor: black;
   --auburnOrange: #e86100;
+  --samfordBrickOrange: #cc4e0b;
 
 }
 
@@ -675,28 +676,6 @@ a.carousel-link:hover  { text-decoration: none;  color: #e86100; transition: .25
 
 
 
-.contact-header{
-  grid-column: 2/14;
-  padding: 1em;
-  color: var(--mainTextColor);
-  font-size: 3vw;
-  text-align: center;
-  
-}
-
-.contact-container{
-  display: flex;
-  grid-column: 2/14;
-}
-
-.contact-form{
-  display: flex;
-  width: 50%;
-}
-.contact-info{
-  display: flex;
-  width: 50%;
-}
 
 .error-container{
   grid-column: 2/14;
@@ -745,6 +724,84 @@ a.carousel-link:hover  { text-decoration: none;  color: #e86100; transition: .25
 a.error-button:link  { text-decoration: none; color: #FFF}
 a.error-button:visited  { text-decoration: none; color: #FFF;}
 a.error-button:hover  { text-decoration: none;  color: #FFF; transform:scale(110%); transition: .25s ease; }
+
+
+
+
+.contact-header{
+  grid-column: 2/14;
+  padding: 1em;
+  color: var(--mainTextColor);
+  font-size: 3vw;
+  text-align: center;
+  
+}
+
+.contact-container{
+  display: flex;
+  grid-column: 2/14;
+}
+
+.contact-form{
+  display: flex;
+  width: 50%;
+}
+.contact-info{
+  display: flex;
+  width: 50%;
+  flex-wrap: wrap;
+}
+
+
+
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: var(--auburnOrange);
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker orange */
+input[type=submit]:hover {
+  background-color: var(--samfordBrickOrange);
+}
+
+
+.contact-socials{
+  width: 100%;
+  text-align: center;
+  display: flex;
+}
+
+
+.contact-team{
+  width: 100%;
+  text-align: center;
+  display: flex;
+}
+
+.contact-info-header {
+  width: 100%;
+}
+
+
+
 
 /* Footer styles */
 footer {
@@ -894,7 +951,7 @@ footer {
   
 }
 
-.ft-copyright t {
+.ft-copyright p {
 
   font-family: "sweet-sans-pro", sans-serif;
   font-size: 14px;
