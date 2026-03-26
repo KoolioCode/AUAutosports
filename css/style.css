@@ -502,6 +502,13 @@ nav {
 .carousel-container {
   position: relative;
   grid-column: 2/14;
+  
+   
+  height: calc(100vh - 96px - 4em);
+
+   
+    
+ 
 }
 
 
@@ -1059,6 +1066,8 @@ and (max-width : 480px){
 
   }
 
+  
+
   .photocontainer {
     width: 100%;
   }
@@ -1504,6 +1513,15 @@ and (max-width : 750px){
 
     height: calc(100dvh - 3px - 3em) !important;
 
+  }
+
+  
+  .carousel-item {
+    
+    height: calc(80vh - 96px - 4em);
+    margin-top: calc(((100vh - 96px - 4em) - (80vh - 96px - 4em)) / 2) ;
+    margin-bottom: calc(((100vh - 96px - 4em) - (80vh - 96px - 4em)) / 2)  ;
+    
   }
 
   .carousel-list {
