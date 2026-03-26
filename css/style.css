@@ -595,7 +595,7 @@ a.carousel-link:hover  { text-decoration: none;  color: #e86100; transition: .25
   grid-column: 2/14;
   padding: 1em;
   color: var(--mainTextColor);
-  font-size: 2rem;
+  font-size: 3vw;
   text-align: center;
   
 }
