@@ -741,6 +741,7 @@ a.error-button:hover  { text-decoration: none;  color: #FFF; transform:scale(110
   display: grid;
   grid-column: 2/14;
   column-count: 2;
+  color: var(--mainTextColor);
 }
 
 .contact-form{
@@ -793,6 +794,7 @@ input[type=submit]:hover {
   display: flex;
   flex-wrap: wrap;
   height: fit-content;
+ 
 }
 
 
@@ -802,9 +804,10 @@ input[type=submit]:hover {
   display: flex;
   flex-wrap: wrap;
   height: fit-content;
+ 
 }
 
-.contact-info-header {
+.contact-info-header-leads {
   width: 100%;
 }
 
@@ -820,8 +823,9 @@ input[type=submit]:hover {
   flex-wrap: nowrap;
   width: 75%;
   align-items: center;
-  justify-content: center;
+  justify-content: left;
   height: fit-content;
+ 
 }
 
 .team-lead-list{
@@ -834,6 +838,7 @@ input[type=submit]:hover {
   padding: 1em;
   align-items: center;
   display: flex;
+  justify-self: left;
 }
 .lead-photo img{
   border-radius: 50%;
@@ -844,9 +849,11 @@ input[type=submit]:hover {
 .lead-text{
   padding: 1em;
   align-items: center;
-  display: flex;
+  display: block;
   flex-wrap: wrap;
   height: fit-content;
+  width: fit-content;
+  justify-self: right;
 }
 
 .lead-name {
@@ -854,19 +861,98 @@ input[type=submit]:hover {
   font-size: 2vw;
   font-weight: bolder;
   width: 100%;
+  width: fit-content;
 }
 .lead-role{
   text-align: left;
   font-size: 1vw;
   width: 100%;
+  width: fit-content;
   
 }
 .lead-email{
   text-align: left;
   font-size: 1vw;
-  text-decoration: underline;
-  width: 100%;
   
+  width: 100%;
+  width: fit-content;
+  
+}
+
+.lead-email a:link,.lead-email a:visited{
+  color: var(--auburnOrange);
+}
+
+
+.contact-info-header-socials {
+  width: 100%;
+  padding-top: 2em;
+}
+
+.team-socials {
+  display: flex;
+  flex-wrap: wrap;
+
+  justify-content: center;
+}
+
+.social{
+  display: flex;
+  flex-wrap: nowrap;
+  width: 75%;
+  align-items: center;
+  justify-content: left;
+  
+ 
+}
+
+
+
+.social-photo {
+  width: 25%;
+  height: fit-content;
+  padding: 1em;
+  align-items: center;
+  display: flex;
+  justify-self: left;
+  
+}
+.social-photo img{
+  
+  height: 75%;
+  width: 75%;
+}
+
+
+
+.social-text{
+  padding: 1em;
+  align-items: center;
+  display: block;
+  flex-wrap: wrap;
+  
+  width: fit-content;
+  justify-self: right;
+}
+
+.social-name {
+  text-align: left;
+  font-size: 2vw;
+  font-weight: bolder;
+  width: 100%;
+  width: fit-content;
+}
+
+.social-handle{
+  text-align: left;
+  font-size: 1.5vw;
+  width: 100%;
+  width: fit-content;
+  
+}
+
+.social-handle a:link,.social-handle a:visited{
+  color: var(--auburnOrange);
 }
 
 
@@ -1014,7 +1100,7 @@ footer {
   justify-content: center;
   margin: 0;
   padding-bottom: 5em;
-  
+  color: var(--mainTextColor);
   
 }
 
@@ -1740,6 +1826,36 @@ and (max-width : 750px){
     display: none;
   }
 
+  .contact-container{
+    display: block;
+    column-count: 1;
+  }
+
+  .contact-info-header{
+    padding-top: 2em;
+  }
+
+  .lead{
+    width: 100%;
+  }
+
+  .lead-name {
+ 
+    font-size: 3vw;
+  
+  }
+  .lead-role{
+ 
+    font-size: 2vw;
+  
+  
+  }
+  .lead-email{
+ 
+    font-size: 2vw;
+  
+  
+  }
   
 }
 
