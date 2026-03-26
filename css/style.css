@@ -673,6 +673,31 @@ a.carousel-link:hover  { text-decoration: none;  color: #e86100; transition: .25
 
 }
 
+
+
+.contact-header{
+  grid-column: 2/14;
+  padding: 1em;
+  color: var(--mainTextColor);
+  font-size: 3vw;
+  text-align: center;
+  
+}
+
+.contact-container{
+  display: flex;
+  grid-column: 2/14;
+}
+
+.contact-form{
+  display: flex;
+  width: 50%;
+}
+.contact-info{
+  display: flex;
+  width: 50%;
+}
+
 /* Footer styles */
 footer {
 
