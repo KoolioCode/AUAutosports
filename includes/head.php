@@ -6,11 +6,13 @@
   <!-- humans.txt -->
   <link rel="author" href="humans.txt">
 
+  
   <!-- Stylehseets -->
   <link rel="stylesheet" href="https://use.typekit.net/jmr5lxu.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0">
   <link rel="stylesheet" href="css/style.css">
+  
   
   <!-- Meta Tags -->
   <meta charset="UTF-8">

@@ -4,6 +4,8 @@
     include "head.php";
   ?>
   <!-- Uniques -->
+
+   
     <!-- Title -->
     <title> Home </title> 
     <meta name="descripton" content="Auburn University's Premiere Racing Team">
