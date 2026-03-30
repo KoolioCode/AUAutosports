@@ -1,8 +1,4 @@
-<!DOCTYPE html>
 
-<html lang="en" class="preload">
-
-<head>
   <!-- humans.txt -->
   <link rel="author" href="humans.txt">
 

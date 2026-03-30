@@ -1,7 +1,12 @@
 <!-- Homepage HTML Document for AU Autosports Website -->
+<!DOCTYPE html>
 
+<html lang="en" class="preload">
+
+<head>
   <?php 
-    include "head.php";
+    require "includes/head.php";
+    echo
   ?>
   <!-- Uniques -->
 
