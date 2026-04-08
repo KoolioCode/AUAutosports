@@ -46,16 +46,16 @@ const navSlide = () => {
 
     /* toggle nav active classes with staggered timing for animation */
     setTimeout(() => {
-      nav.classList.toggle('nav-active-1');
+      nav.classList.toggle('nav-active');
     }, 0);
     setTimeout(() => {
-      nav.classList.toggle('nav-active-2');
+      nav.classList.toggle('nav-active1');
     }, 125);
     setTimeout(() => {
-      nav.classList.toggle('nav-active-3');
+      nav.classList.toggle('nav-active1');
     }, 250);
     setTimeout(() => {
-      nav.classList.toggle('nav-active-4');
+      nav.classList.toggle('nav-active1');
     }, 375);
     
     /* toggle noscroll on body to prevent scrolling when nav is open */

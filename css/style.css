@@ -1444,7 +1444,12 @@ and (max-width : 750px){
     width: 100dvw;
     z-index: 10;
 
-    transform: translateY(-115%);
+    transform: translateY(-200%);
+    transition: transform .125s ease;
+  }
+
+  .nav-pages.nav-active{
+    transform: translateY(-50%);
     transition: transform .125s ease;
   }
 
