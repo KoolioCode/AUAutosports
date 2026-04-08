@@ -1880,7 +1880,38 @@ and (max-width : 750px){
   
 }
 
+@media only screen 
+and (max-width : 1048px) and (min-width: 930px) {
 
+  .nav-pages a{
+    padding: 1em;
+    font-size: medium;
+    letter-spacing: 0px;
+  }
+  
+}
+
+@media only screen 
+and (max-width : 930px) {
+
+  .nav-pages a{
+    padding: 1em;
+    font-size: small;
+    letter-spacing: 0px;
+  }
+  
+}
+
+@media only screen 
+and (max-width : 800px) {
+
+  .nav-pages a{
+    padding: .65em;
+    font-size: small;
+    letter-spacing: 0px;
+  }
+  
+}
 
 
 
