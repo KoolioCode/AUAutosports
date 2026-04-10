@@ -46,7 +46,7 @@ const navSlide = () => {
 
     /* toggle nav active classes with staggered timing for animation */
     setTimeout(() => {
-      nav.classList.toggle('nav-active-1');
+      nav.classList.toggle('nav-active');
     }, 0);
     setTimeout(() => {
       nav.classList.toggle('nav-active-2');
