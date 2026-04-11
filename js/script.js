@@ -48,21 +48,6 @@ const navSlide = () => {
     setTimeout(() => {
       nav.classList.toggle('nav-active');
     }, 0);
-    setTimeout(() => {
-      nav.classList.toggle('nav-active-2');
-    }, 125);
-    setTimeout(() => {
-      nav.classList.toggle('nav-active-3');
-    }, 250);
-    setTimeout(() => {
-      nav.classList.toggle('nav-active-4');
-    }, 375);
-    setTimeout(() => {
-      nav.classList.toggle('nav-active-5');
-    }, 500);
-    setTimeout(() => {
-      nav.classList.toggle('nav-active-6');
-    }, 625);
     
     /* toggle noscroll on body to prevent scrolling when nav is open */
     bodyscroll.classList.toggle('no-scroll');
