@@ -1,6 +1,7 @@
 {
   "dependencies": {
     "imagesloaded": "^5.0.0",
+    "jquery": "^4.0.0",
     "masonry-layout": "^4.2.2"
   }
 }
