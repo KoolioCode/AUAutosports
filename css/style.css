@@ -728,7 +728,7 @@ a.error-button:hover  { text-decoration: none;  color: #FFF; transform:scale(110
 
 
 
-.contact-header{
+.page-header{
   grid-column: 2/14;
   padding: 1em;
   color: var(--mainTextColor);
