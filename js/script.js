@@ -48,9 +48,9 @@ window.addEventListener("resize", () => {
 /* nav animation and toggle */
 const navSlide = () => {
 
-  const burger = document.querySelector('.burger')
+  const burger = document.querySelector('.burger');
   const nav = document.querySelector('.nav-pages');
-  const bodyscroll = document.querySelector('body')
+  const bodyscroll = document.querySelector('body');
 
   burger.addEventListener('click', () => {
 
@@ -157,6 +157,20 @@ if ( document.URL.includes("gallery.html") ) {
     }
   }
 }
+
+
+// init Masonry
+var $grid = $('.photogrid').masonry({
+  itemSelector: '.photocontainer', 
+  columnWidth: '.photogridsizer', 
+  gutter: 10, 
+  horizontalOrder: true
+});
+// layout Masonry after each image loads
+$('.photogrid').imagesLoaded().progress( function() {
+  $grid.masonry('layout');
+});
+
 
 
 
