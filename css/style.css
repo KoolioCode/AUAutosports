@@ -34,6 +34,7 @@ html {
 
   --mainFooterColor:#fbfbfb;
   --mainPageColor: #fafafa;
+  --mainPageColorT: rgb(250,250,250,0);
   --mainTextColor: black;
   --auburnOrange: #e86100;
   --samfordBrickOrange: #cc4e0b;
@@ -44,6 +45,7 @@ html.dark {
 
   --mainFooterColor: #121212;
   --mainPageColor: #121212;
+  --mainPageColorT: rgb(18, 18, 18, 0);
   --mainTextColor: white;
   
 }
@@ -958,6 +960,40 @@ input[type=submit]:hover {
 .social-handle a:link,.social-handle a:visited{
   color: var(--auburnOrange);
 }
+
+
+
+
+
+
+
+
+
+
+/* Landing Page Styles*/
+
+.landing-page-gradient{
+  display: flex;
+  background: var(--mainPageColor);
+  background: linear-gradient(180deg, var(--mainPageColorT) 0%, var(--mainPageColor) 100%);
+  height: calc(100dvh - 3px - 3em);
+  width: 100%;
+  grid-column: 1/15;
+}
+
+.landing-page-learn-more{
+  height: calc(100dvh - 3px - 3em);
+  background-color: var(--mainPageColor);
+  grid-column: 1/15;
+}
+
+
+
+
+
+
+
+
 
 
 /* Footer styles */
