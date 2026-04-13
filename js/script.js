@@ -173,7 +173,7 @@ if ( document.URL.includes("gallery") ) {
 }
 
 
-import fs from "fs"
+
 const fs = require("fs");
 fs.readdirSync(".assets/placeholders/").forEach(file => {
     //Print file name
