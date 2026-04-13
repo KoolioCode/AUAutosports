@@ -990,9 +990,11 @@ input[type=submit]:hover {
 
 
 
+/* Schedule Pages Styles */
 
-
-
+.schedule-container{
+  grid-column: 2/14;
+}
 
 
 
