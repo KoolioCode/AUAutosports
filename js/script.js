@@ -174,8 +174,9 @@ if ( document.URL.includes("gallery") ) {
 
 
 
-const fs = require("fs");
-fs.readdirSync(".assets/placeholders/").forEach(file => {
+require(['fs'], function (fs) {
+ 
+  fs.readdirSync(".assets/placeholders/").forEach(file => {
     //Print file name
     document.createElement('span')
 
@@ -183,7 +184,9 @@ fs.readdirSync(".assets/placeholders/").forEach(file => {
     Run this to print the file contents
     console.log(readFileSync(".levels/" + file, {encoding: "utf8"}))
     */
-})
+  })
+});
+
  
 
 
