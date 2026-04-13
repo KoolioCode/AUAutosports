@@ -994,6 +994,11 @@ input[type=submit]:hover {
 
 .schedule-container{
   grid-column: 2/14;
+  height: 100dvh;
+}
+
+.schedule-container div{
+  height: 100%;
 }
 
 

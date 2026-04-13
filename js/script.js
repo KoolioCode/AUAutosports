@@ -158,7 +158,7 @@ if ( document.URL.includes("gallery.html") ) {
   }
 }
 
-
+if ( document.URL.includes("gallery") ) {
 // init Masonry
 var $grid = $('.photogrid').masonry({
   itemSelector: '.photocontainer', 
@@ -171,7 +171,7 @@ $('.photogrid').imagesLoaded().progress( function() {
   $grid.masonry('layout');
 });
 
-
+}
 
 
 
