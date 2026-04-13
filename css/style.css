@@ -993,8 +993,7 @@ input[type=submit]:hover {
 /* Schedule Pages Styles */
 
 .schedule-container{
-  grid-column: 2/14;
-  height: 100dvh;
+  grid-column: 3/13;
 }
 
 .schedule-container div{
