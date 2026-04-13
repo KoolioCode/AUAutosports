@@ -159,20 +159,32 @@ if ( document.URL.includes("gallery.html") ) {
 }
 
 if ( document.URL.includes("gallery") ) {
-// init Masonry
-var $grid = $('.photogrid').masonry({
-  itemSelector: '.photocontainer', 
-  columnWidth: '.photogridsizer', 
-  gutter: 10, 
-  horizontalOrder: true
-});
-// layout Masonry after each image loads
-$('.photogrid').imagesLoaded().progress( function() {
-  $grid.masonry('layout');
-});
-
+  // init Masonry
+  var $grid = $('.photogrid').masonry({
+    itemSelector: '.photocontainer', 
+    columnWidth: '.photogridsizer', 
+    gutter: 10, 
+    horizontalOrder: true
+  });
+  // layout Masonry after each image loads
+  $('.photogrid').imagesLoaded().progress( function() {
+    $grid.masonry('layout');
+  });
 }
 
+
+import fs from "fs"
+const fs = require("fs");
+fs.readdirSync(".assets/placeholders/").forEach(file => {
+    //Print file name
+    document.createElement('span')
+
+    /*
+    Run this to print the file contents
+    console.log(readFileSync(".levels/" + file, {encoding: "utf8"}))
+    */
+})
+ 
 
 
 
