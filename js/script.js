@@ -72,8 +72,17 @@ navSlide();
 
 const landingScroll = () => {
 
-  const landingButton = document.querySelector
+  const landingButton = document.querySelector('.landing-button')
+  const bodyScroll = document.querySelector('body')
+  const div = document.querySelector('landing-page-learn-more')
 
+
+  landingButton.addEventListener('click', () => {
+    div.scrollIntoView();
+
+
+
+  });
 }
 
 
