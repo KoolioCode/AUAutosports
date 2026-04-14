@@ -80,8 +80,6 @@ const landingScroll = () => {
   landingButton.addEventListener('click', () => {
     div.scrollIntoView();
 
-
-
   });
 }
 
