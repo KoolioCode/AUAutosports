@@ -70,6 +70,12 @@ const navSlide = () => {
 }
 navSlide();
 
+const landingScroll = () => {
+
+  const landingButton = document.querySelector
+
+}
+
 
 /* theme toggle and dark mode support */
 const modeToggle = () => {

@@ -425,10 +425,10 @@ nav {
   background-color: var(--auburnOrange) ;
   display: flex;
   justify-content: center;
-  left: calc((100% - 25%) / 2);
+  left: calc((100% - 15%) / 2);
   position: absolute;
-  top: calc((100% - 50%) - 55px) ;
-  width: 25%;
+  top: calc((100% - 35%) - 55px) ;
+  width: 15%;
   align-items: center;
   align-self: center;
   place-content: center;
@@ -444,16 +444,16 @@ nav {
   
   font-family: "sweet-sans-pro", sans-serif; 
   font-weight: 1000;
-  font-size: 1.5vw;
+  font-size: 2vw;
   letter-spacing: 2px;
   margin: 0;
-  padding: 1em;
+  padding: .5em;
   place-content: center;
   text-align: center;
   text-decoration: none;
   user-select: none;
   white-space: nowrap;
-  
+  transform: scaleX(200%);
 }
 
 .landing-button:hover   {
