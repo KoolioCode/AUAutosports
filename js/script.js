@@ -82,6 +82,7 @@ const landingScroll = () => {
 
   });
 }
+landingScroll();
 
 
 /* theme toggle and dark mode support */
