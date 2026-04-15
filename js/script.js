@@ -16,6 +16,11 @@ window.addEventListener("load", () => {
   html.classList.remove("preload");
 });
 
+function smoothScroll(){
+  document.querySelector('landing-page-learn-more').scrollIntoView({
+      behavior: 'smooth'
+  });
+}
 
 /* stop animations and nav during resizing to prevent eye strain */
 let resizeTimer;
@@ -73,12 +78,10 @@ navSlide();
 const landingScroll = () => {
 
   const landingButton = document.querySelector('.landing-button')
-  const bodyScroll = document.querySelector('body')
-  const div = document.querySelector('landing-page-learn-more')
 
 
   landingButton.addEventListener('click', () => {
-    div.scrollIntoView();
+    smoothScroll
 
   });
 }
@@ -201,7 +204,7 @@ require(['fs'], function (fs) {
   })
 });
 
- 
+
 
 
 
