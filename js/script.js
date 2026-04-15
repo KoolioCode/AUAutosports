@@ -76,17 +76,7 @@ const navSlide = () => {
 }
 navSlide();
 
-const landingScroll = () => {
 
-  const landingButton = document.querySelector('.landing-button')
-
-
-  landingButton.addEventListener('click', () => {
-    smoothScroll();
-
-  });
-}
-landingScroll();
 
 
 /* theme toggle and dark mode support */
@@ -205,6 +195,52 @@ require(['fs'], function (fs) {
   })
 });
 */
+
+// Custom slow scroll function
+function slowScrollTo(element, duration = 2000) {
+  // Get the element's position relative to the viewport
+  const elementPosition = element.getBoundingClientRect().top;
+  // Get starting position (current scroll position)
+  const startPosition = window.pageYOffset;
+  // Calculate distance to scroll
+  const distance = elementPosition;
+  
+  let startTime = null;
+  
+  function animation(currentTime) {
+    if (startTime === null) startTime = currentTime;
+    const timeElapsed = currentTime - startTime;
+    const scrollY = easeInOutCubic(timeElapsed, startPosition, distance, duration);
+    
+    window.scrollTo(0, scrollY);
+    
+    if (timeElapsed < duration) {
+      requestAnimationFrame(animation);
+    }
+  }
+  
+  // Easing function for smooth acceleration and deceleration
+  function easeInOutCubic(t, b, c, d) {
+    t /= d/2;
+    if (t < 1) return c/2*t*t*t + b;
+    t -= 2;
+    return c/2*(t*t*t + 2) + b;
+  }
+  
+  requestAnimationFrame(animation);
+}
+
+const landingScroll = () => {
+
+  const landingButton = document.querySelector('.landing-button')
+
+
+  landingButton.addEventListener('click', () => {
+    slowScrollTo(document.getElementById('scrollthing'), 3000);
+
+  });
+}
+landingScroll();
 
 
 
