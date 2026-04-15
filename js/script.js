@@ -17,7 +17,8 @@ window.addEventListener("load", () => {
 });
 
 function smoothScroll(){
-  document.querySelector('landing-page-learn-more').scrollIntoView({
+  const div = document.getElementById("scrollthing");
+  div.scrollIntoView({
       behavior: 'smooth'
   });
 }
@@ -81,7 +82,7 @@ const landingScroll = () => {
 
 
   landingButton.addEventListener('click', () => {
-    smoothScroll
+    smoothScroll();
 
   });
 }
