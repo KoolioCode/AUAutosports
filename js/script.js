@@ -197,13 +197,15 @@ require(['fs'], function (fs) {
 */
 
 // Custom slow scroll function
-function slowScrollTo(element, duration = 2000) {
+function slowScrollTo(element, duration = 2000, offset) {
   // Get the element's position relative to the viewport
   const elementPosition = element.getBoundingClientRect().top;
   // Get starting position (current scroll position)
   const startPosition = window.pageYOffset;
+
+  const offsetPX = offset;
   // Calculate distance to scroll
-  const distance = elementPosition;
+  const distance = elementPosition - offsetPX;
   
   let startTime = null;
   
@@ -236,7 +238,7 @@ const landingScroll = () => {
 
 
   landingButton.addEventListener('click', () => {
-    slowScrollTo(document.getElementById('scrollthing'), 3000);
+    slowScrollTo(document.getElementById('scrollthing'), 2000,96);
 
   });
 }
