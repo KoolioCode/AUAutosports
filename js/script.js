@@ -16,7 +16,7 @@ window.addEventListener("load", () => {
   html.classList.remove("preload");
 });
 
-AOS.init();
+Aos.init();
 
 function smoothScroll(){
   const div = document.getElementById("scrollthing");
