@@ -190,7 +190,7 @@ if ( document.URL.includes("gallery") ) {
 }
 
 
-
+/*
 require(['fs'], function (fs) {
  
   fs.readdirSync(".assets/placeholders/").forEach(file => {
@@ -200,10 +200,10 @@ require(['fs'], function (fs) {
     /*
     Run this to print the file contents
     console.log(readFileSync(".levels/" + file, {encoding: "utf8"}))
-    */
+    *//*
   })
 });
-
+*/
 
 
 
