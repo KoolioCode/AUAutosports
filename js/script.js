@@ -1,6 +1,6 @@
 /* JS Document for AU Autosports website */
 
-document.addEventListener('DOMContentLoaded', function(){ 
+
   if (window.location.href.endsWith(".html")) {
     window.location.href = window.location.href.replace(".html", "");
   }
@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function(){
   if (window.location.href.endsWith("index.html")) {
     window.location.href = window.location.href.replace("index.html", "");
   }
-})
+
 
 /* disable animations until page is fully loaded to prevent eye strain */
 const html = document.querySelector('html');
