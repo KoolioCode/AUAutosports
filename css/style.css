@@ -421,8 +421,8 @@ nav {
 
 .landing-button {
   
-  border-radius: 50%;
-  background-color: var(--auburnOrange) ;
+  border-radius: 1em;
+  background-color: rgb(232,97,0,50) ;
   display: flex;
   justify-content: center;
   left: calc((100% - 15%) / 2);
@@ -433,9 +433,9 @@ nav {
   align-self: center;
   place-content: center;
   cursor: pointer;
-  opacity: 50%;
+  
   border-color: #fafafa;
-
+  
 }
 
 .landing-button-text p {
