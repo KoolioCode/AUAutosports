@@ -20,8 +20,8 @@ window.addEventListener("load", () => {
 // init AOS animation
 window.addEventListener("load", () => {
     AOS.init({
-        duration: 1000,
-        offset: 100,
+        duration: 1500,
+        offset: 200,
         
     });
 
