@@ -455,7 +455,7 @@ nav {
   text-decoration: none;
   user-select: none;
   white-space: nowrap;
-  transform: scaleX(300%);
+  transform: scaleX(200%);
 }
 
 .landing-button:hover   {
