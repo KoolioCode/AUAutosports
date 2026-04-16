@@ -1662,7 +1662,7 @@ and (max-width : 1048px) and (min-width: 930px) {
   .landing-button {
 
     width: 20%;
-    border-radius: 30%;
+    border-radius: 3em;
     left: calc((100% - 20%) / 2);
   }
 }
@@ -1678,7 +1678,7 @@ and (max-width : 930px) {
   .landing-button {
 
     width: 25%;
-    border-radius: 25%;
+    border-radius: 2em;
     left: calc((100% - 25%) / 2);
   }
 }
@@ -1693,9 +1693,14 @@ and (max-width : 800px) {
   }
   .landing-button {
 
-    width: 30%;
-    border-radius: 20%;
-    left: calc((100% - 30%) / 2);
+    width: 50%;
+    border-radius: 1em;
+    left: calc((100% - 50%) / 2);
+    height: 10dvh;
+  }
+
+  .landing-button-text p{
+    font-size: 4vw;
   }
   
 }
