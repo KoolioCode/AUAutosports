@@ -990,7 +990,9 @@ input[type=submit]:hover {
 .landing-page-learn-more{
   height: calc(100dvh - 3px - 3em);
   background-color: var(--mainPageColor);
-  grid-column: 2/14;
+  grid-column: 1/15;
+  display: flex;
+  align-items: center;
  
 }
 
