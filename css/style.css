@@ -433,8 +433,10 @@ nav {
   align-self: center;
   place-content: center;
   cursor: pointer;
-  border-width: 10px;
-  border-color: rgba(255, 255, 255, 0.5)
+  border-width: 20px;
+  border-color: rgba(255, 255, 255, 0.5);
+  border-style: solid;
+  
   
 }
 
