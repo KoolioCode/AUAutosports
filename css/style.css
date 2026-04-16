@@ -421,11 +421,11 @@ nav {
 
 .landing-button {
   
-  border-radius: 25%;
+  border-radius: 45%;
   background-color: rgb(232,97,0,50) ;
   display: flex;
   justify-content: center;
-  left: calc((100% - 15%) / 2);
+  left: calc((100% - 5%) / 2);
   position: absolute;
   top: calc((100% - 35%) - 55px) ;
   width: 5%;
