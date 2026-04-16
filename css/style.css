@@ -421,7 +421,7 @@ nav {
 
 .landing-button {
   
-  border-radius: 1em;
+  border-radius: 50%;
   background-color: var(--auburnOrange) ;
   display: flex;
   justify-content: center;
@@ -433,6 +433,8 @@ nav {
   align-self: center;
   place-content: center;
   cursor: pointer;
+  opacity: 50%;
+  border-color: #fafafa;
 
 }
 
