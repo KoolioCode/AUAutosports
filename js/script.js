@@ -22,6 +22,7 @@ window.addEventListener("load", () => {
     AOS.init({
         duration: 1000,
         offset: 100,
+        
     });
 
     Aos.refresh();
@@ -252,7 +253,6 @@ const landingScroll = () => {
 
 
   landingButton.addEventListener('click', () => {
-  
     slowScrollTo(document.getElementById('scrollthing'), 2000,96);
 
   });
