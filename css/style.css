@@ -433,7 +433,7 @@ nav {
   align-self: center;
   place-content: center;
   cursor: pointer;
-  
+  border: 10px;
   border-color: #fafafa;
   
 }
