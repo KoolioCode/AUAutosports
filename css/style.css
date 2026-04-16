@@ -1659,6 +1659,12 @@ and (max-width : 1048px) and (min-width: 930px) {
     letter-spacing: 0px;
   }
   
+  .landing-button {
+
+    width: 20%;
+    border-radius: 30%;
+    left: calc((100% - 20%) / 2);
+  }
 }
 
 @media only screen 
@@ -1669,7 +1675,12 @@ and (max-width : 930px) {
     font-size: small;
     letter-spacing: 0px;
   }
-  
+  .landing-button {
+
+    width: 25%;
+    border-radius: 25%;
+    left: calc((100% - 25%) / 2);
+  }
 }
 
 @media only screen 
@@ -1679,6 +1690,12 @@ and (max-width : 800px) {
     padding: .65em;
     font-size: small;
     letter-spacing: 0px;
+  }
+  .landing-button {
+
+    width: 30%;
+    border-radius: 20%;
+    left: calc((100% - 30%) / 2);
   }
   
 }
