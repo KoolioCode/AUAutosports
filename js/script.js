@@ -21,7 +21,7 @@ window.addEventListener("load", () => {
 window.addEventListener("load", () => {
     AOS.init({
         duration: 1500,
-        offset: 200,
+        
         
     });
 
