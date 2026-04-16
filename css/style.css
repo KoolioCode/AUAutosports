@@ -445,7 +445,7 @@ nav {
   font-family: "sweet-sans-pro", sans-serif; 
   font-weight: 1000;
   font-size: 2vw;
-  letter-spacing: 2px;
+  letter-spacing: 0px;
   margin: 0;
   padding: .5em;
   place-content: center;
@@ -453,7 +453,7 @@ nav {
   text-decoration: none;
   user-select: none;
   white-space: nowrap;
-  transform: scaleX(400%);
+  transform: scaleX(500%);
 }
 
 .landing-button:hover   {
