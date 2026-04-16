@@ -20,9 +20,7 @@ window.addEventListener("load", () => {
 // init AOS animation
 window.addEventListener("load", () => {
     AOS.init({
-        duration: 1250,
-        
-        
+      duration: 1250, 
     });
 
     Aos.refresh();
