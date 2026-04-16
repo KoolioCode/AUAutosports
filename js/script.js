@@ -253,6 +253,7 @@ const landingScroll = () => {
 
 
   landingButton.addEventListener('click', () => {
+    landingButton.classList.remove('aos-animate')
     slowScrollTo(document.getElementById('scrollthing'), 2000,96);
 
   });
