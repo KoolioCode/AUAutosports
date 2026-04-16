@@ -16,8 +16,19 @@ window.addEventListener("load", () => {
   html.classList.remove("preload");
 });
 
-Aos.init();
-Aos.refresh();
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+// init AOS animation
+window.addEventListener("load", () => {
+    AOS.init({
+        duration: 1000,
+        offset: 100,
+    });
+
+    Aos.refresh();
+});
+
+
+
 
 function smoothScroll(){
   const div = document.getElementById("scrollthing");
