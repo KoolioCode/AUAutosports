@@ -252,7 +252,7 @@ const landingScroll = () => {
 
 
   landingButton.addEventListener('click', () => {
-    Aos.refresh();
+  
     slowScrollTo(document.getElementById('scrollthing'), 2000,96);
 
   });
