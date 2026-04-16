@@ -434,7 +434,7 @@ nav {
   place-content: center;
   cursor: pointer;
   border: 10px;
-  border-color: #fafafa;
+  border-color: rgba(255, 255, 255, 0.5)
   
 }
 
