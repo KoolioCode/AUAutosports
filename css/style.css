@@ -970,8 +970,42 @@ input[type=submit]:hover {
 
 
 
+.about-us-container{
+  display: grid;
+  grid-column: 2/14;
+  column-count: 12;
+  color: var(--mainTextColor);
+}
 
+.about-us-header{
+  display: flex;
+  grid-column: 1/15;
 
+}
+
+.about-us-header img{
+  width: 100%;
+}
+
+.about-team-container{
+
+}
+
+.about-engineering-container{
+
+}
+
+.about-business-container{
+
+}
+
+.about-car-container{
+
+}
+
+.about-officers-container{
+
+}
 
 
 
