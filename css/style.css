@@ -433,9 +433,7 @@ nav {
   align-self: center;
   place-content: center;
   cursor: pointer;
-  border-width: 50px;
-  border-color: rgba(255, 255, 255, 0.20);
-  border-style: solid;
+ 
   
   
 }
