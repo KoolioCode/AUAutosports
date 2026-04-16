@@ -16,7 +16,7 @@ window.addEventListener("load", () => {
   html.classList.remove("preload");
 });
 
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
 // init AOS animation
 window.addEventListener("load", () => {
     AOS.init({
