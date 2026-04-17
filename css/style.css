@@ -972,6 +972,8 @@ input[type=submit]:hover {
   background-image: url("../assets/placeholders/Aaron_Alec_Tabling.jpg");
   grid-column: 1/-1;
   height: calc(100dvh - 30px - 2em) !important;
+  background-position: center;
+  background-size: cover;
 }
 
 .about-us-container{
