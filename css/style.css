@@ -319,7 +319,7 @@ nav {
 .landing-header-container {
 
   grid-column: -1/1;
-  height: calc(100dvh - 30px - 2em) !important;
+  height: calc(100dvh - 96px) !important;
 
 }
 
