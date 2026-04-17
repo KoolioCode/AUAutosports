@@ -970,7 +970,8 @@ input[type=submit]:hover {
 
 .page-header.about-us{
   background-image: url("../assets/placeholders/Aaron_Alec_Tabling.jpg");
-  grid-column: 1/15;
+  grid-column: -1/15;
+  height: calc(100dvh - 30px - 2em) !important;
 }
 
 .about-us-container{
