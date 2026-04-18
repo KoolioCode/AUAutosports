@@ -779,7 +779,7 @@ a.error-button:hover  { text-decoration: none;  color: #FFF; transform:scale(110
 
 
 .page-header{
-  grid-column: 2/14;
+  grid-column: 1/-1;
   padding: 1em;
   color: var(--mainTextColor);
   font-size: 3vw;
