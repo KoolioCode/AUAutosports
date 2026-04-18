@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="a" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500">
+  <defs>
+    <style>
+      .b {
+        fill: #cc4e0b;
+      }
+
+      .c {
+        fill: none;
+        stroke: #fff;
+        stroke-linecap: round;
+        stroke-miterlimit: 10;
+        stroke-width: 19.09px;
+      }
+
+      .d {
+        fill: #e86100;
+      }
+    </style>
+  </defs>
+  <circle class="d" cx="250" cy="250" r="250"/>
+  <circle class="b" cx="250" cy="250" r="225"/>
+  <circle class="d" cx="250" cy="250" r="200"/>
+  <g>
+    <line class="c" x1="250" y1="292.5" x2="325" y2="217.5"/>
+    <line class="c" x1="250" y1="292.5" x2="175" y2="217.5"/>
+  </g>
+</svg>
