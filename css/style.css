@@ -428,8 +428,8 @@ nav {
   left: calc((100% - 5%) / 2);
   position: absolute;
   top: calc((100% - 35%) - 55px) ;
-  width: 3dvw;
-  height: 3dvw;
+  width: 10dvw;
+  height: 10dvw;
   align-items: center;
   align-self: center;
   place-content: center;
@@ -439,15 +439,15 @@ nav {
   
 }
 .landing-button-1{
-  width: auto;
-  height: auto;
+  width: 100%;
+  height: 100%;
   position: absolute;
   z-index: 1000;
 }
 .landing-button-2{
   z-index: 500;
-  width: auto;
-  height: auto;
+  width: 100%;
+  height: 100%;
   position: absolute;
 }
 
