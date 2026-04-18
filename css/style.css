@@ -437,6 +437,18 @@ nav {
   
   
 }
+.landing-button-1{
+  width: auto;
+  height: auto;
+  position: absolute;
+  z-index: 1000;
+}
+.landing-button-2{
+  z-index: 500;
+  width: auto;
+  height: auto;
+  position: absolute;
+}
 
 @-webkit-keyframes zoomIn {
   0% {
