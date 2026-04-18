@@ -470,8 +470,8 @@ nav {
   
   100% {
     opacity: 0;
-    -webkit-transform: scale(200%);
-            transform: scale(200%);
+    -webkit-transform: scale(150%);
+            transform: scale(150%);
   }
 }
 
@@ -489,8 +489,8 @@ nav {
   
   100% {
     opacity: 0;
-    -webkit-transform: scale(200%);
-            transform: scale(200%);
+    -webkit-transform: scale(150%);
+            transform: scale(150%);
   }
 }
 
