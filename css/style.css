@@ -421,8 +421,8 @@ nav {
 
 .landing-button {
   
-  border-radius: 45%;
-  background-color: rgba(232, 97, 0, 0.5) ;
+
+  
   display: flex;
   justify-content: center;
   left: calc((100% - 5%) / 2);
