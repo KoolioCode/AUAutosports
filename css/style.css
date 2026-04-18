@@ -443,7 +443,7 @@ nav {
   height: 100%;
   position: absolute;
   z-index: 1000;
-  display: none;
+ 
 }
 .landing-button-2{
   z-index: 500;
@@ -499,10 +499,7 @@ nav {
     -webkit-animation-duration: 2s;
             animation-duration: 2s;
  
-  
-  -moz-animation: zoomIn infinite;
-  -webkit-animation-name: zoomIn infinite;
-  -o-animation: zoomIn infinite;
+
   animation: zoomIn 2s infinite ease-in-out;
   -webkit-animation: zoomIn 2s infinite ease-in-out ;
 
