@@ -428,7 +428,8 @@ nav {
   left: calc((100% - 5%) / 2);
   position: absolute;
   top: calc((100% - 35%) - 55px) ;
-  width: 5%;
+  width: 3dvw;
+  height: 3dvw;
   align-items: center;
   align-self: center;
   place-content: center;
