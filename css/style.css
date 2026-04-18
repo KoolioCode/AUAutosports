@@ -464,13 +464,14 @@ nav {
 
   50% {
     opacity: 0.5;
-    -webkit-transform: scale(200%);
-            transform: scale(200%);
+    
     
   }
   
   100% {
     opacity: 0;
+    -webkit-transform: scale(200%);
+            transform: scale(200%);
   }
 }
 
@@ -482,13 +483,14 @@ nav {
 
   50% {
     opacity: 0.5;
-    -webkit-transform: scale(200%);
-            transform: scale(200%);
+    
     
   }
   
   100% {
     opacity: 0;
+    -webkit-transform: scale(200%);
+            transform: scale(200%);
   }
 }
 
