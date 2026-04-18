@@ -484,8 +484,11 @@ nav {
 }
 
 .zoomIn {
-  -webkit-animation-name: zoomIn;
-          animation-name: zoomIn;
+  -moz-animation: zoomIn infinite;
+  -webkit-animation-name: zoomIn infinite;
+  -o-animation: zoomIn infinite;
+          animation-name: zoomIn infinite;
+
 }
 
 
