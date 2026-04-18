@@ -438,25 +438,44 @@ nav {
   
 }
 
-.landing-button-text p {
+@-webkit-keyframes zoomIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale3d(.4, .4, .4);
+            transform: scale3d(.4, .4, .4);
+  }
+
+  50% {
+    opacity: 0.5;
+  }
   
-  place-content: center;
-  
-  color: #e7e7e7;
-  
-  font-family: "sweet-sans-pro", sans-serif; 
-  font-weight: 1000;
-  font-size: 2vw;
-  letter-spacing: 0px;
-  margin: 0;
-  padding: .5em;
-  place-content: center;
-  text-align: center;
-  text-decoration: none;
-  user-select: none;
-  white-space: nowrap;
-  transform: scaleX(200%);
+  100% {
+    opacity: 0;
+  }
 }
+
+@keyframes zoomIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale3d(.4, .4, .4);
+            transform: scale3d(.4, .4, .4);
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+  
+  100% {
+    opacity: 0;
+  }
+}
+
+.zoomIn {
+  -webkit-animation-name: zoomIn;
+          animation-name: zoomIn;
+}
+
+
 
 .landing-button:hover   {
   cursor: pointer;
