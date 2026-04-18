@@ -443,6 +443,7 @@ nav {
   height: 100%;
   position: absolute;
   z-index: 1000;
+  display: none;
 }
 .landing-button-2{
   z-index: 500;
