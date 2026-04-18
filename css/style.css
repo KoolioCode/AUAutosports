@@ -451,20 +451,21 @@ nav {
   height: 100%;
   position: absolute;
   opacity: 0.5;
-  transform: scale(200%);
+  
 }
 
 @-webkit-keyframes zoomIn {
   0% {
     opacity: 0;
 
-    -webkit-transform: scale(100%);
-            transform: scale(100%);
+    
     
   }
 
   50% {
     opacity: 0.5;
+    -webkit-transform: scale(200%);
+            transform: scale(200%);
     
   }
   
@@ -476,12 +477,13 @@ nav {
 @keyframes zoomIn {
   0% {
     opacity: 0;
-    -webkit-transform: scale(100%);
-            transform: scale(100%);
+    
   }
 
   50% {
     opacity: 0.5;
+    -webkit-transform: scale(200%);
+            transform: scale(200%);
     
   }
   
@@ -499,8 +501,8 @@ nav {
   -moz-animation: zoomIn infinite;
   -webkit-animation-name: zoomIn infinite;
   -o-animation: zoomIn infinite;
-  animation: slidein 2s infinite ease-out;
-  -webkit-animation: slidein 2s infinite ease-out;
+  animation: zoomIn 2s infinite ease-out;
+  -webkit-animation: zoomIn 2s infinite ease-out;
 
     
  
