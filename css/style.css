@@ -451,6 +451,7 @@ nav {
   height: 100%;
   position: absolute;
   opacity: 0.5;
+  transform: scale(200%);
 }
 
 @-webkit-keyframes zoomIn {
