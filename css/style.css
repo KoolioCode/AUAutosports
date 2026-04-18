@@ -1087,6 +1087,14 @@ input[type=submit]:hover {
 
 
 
+.sponsor-container{
+  grid-column: 2/14;
+  display: flex;
+  align-items: center;
+  place-content: center;
+  width: 100%;
+}
+
 /* Schedule Pages Styles */
 
 .schedule-container{
