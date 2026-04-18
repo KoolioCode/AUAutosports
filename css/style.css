@@ -425,7 +425,7 @@ nav {
   
   display: flex;
   justify-content: center;
-  left: calc((100% - 5%) / 2);
+  left: calc((100% - 10dvw) / 2);
   position: absolute;
   top: calc((100% - 35%) - 55px) ;
   width: 10dvw;
