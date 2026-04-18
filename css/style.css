@@ -456,12 +456,13 @@ nav {
 @-webkit-keyframes zoomIn {
   0% {
     opacity: 0;
-    -webkit-transform: scale(200%);
-            transform: scale(200%);
+    
   }
 
   50% {
     opacity: 0.5;
+    -webkit-transform: scale(200%);
+            transform: scale(200%);
   }
   
   100% {
@@ -478,6 +479,8 @@ nav {
 
   50% {
     opacity: 0.5;
+    -webkit-transform: scale(200%);
+            transform: scale(200%);
   }
   
   100% {
