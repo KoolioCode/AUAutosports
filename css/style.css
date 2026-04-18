@@ -501,8 +501,8 @@ nav {
   -moz-animation: zoomIn infinite;
   -webkit-animation-name: zoomIn infinite;
   -o-animation: zoomIn infinite;
-  animation: zoomIn 2s infinite ease-out;
-  -webkit-animation: zoomIn 2s infinite ease-out;
+  animation: zoomIn 2s infinite ease-in-out;
+  -webkit-animation: zoomIn 2s infinite ease-in-out ;
 
     
  
