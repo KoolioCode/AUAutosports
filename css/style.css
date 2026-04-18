@@ -500,8 +500,8 @@ nav {
             animation-duration: 2s;
  
 
-  animation: zoomIn 2s infinite ease-in-out;
-  -webkit-animation: zoomIn 2s infinite ease-in-out ;
+  animation: zoomIn 2s infinite ease-out;
+  -webkit-animation: zoomIn 2s infinite ease-out ;
 
     
  
