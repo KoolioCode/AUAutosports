@@ -525,16 +525,6 @@ nav {
   width: 100%;
   z-index: -3;
   
-}.landing-header-container img.twosw {
-
-  height: 100%;
-  margin: 0;
-  object-fit:cover;
-  object-position: top;
-  position: fixed;
-  width: 100%;
-  z-index: -1;
-  
 }
 
 
