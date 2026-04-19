@@ -1018,13 +1018,14 @@ input[type=submit]:hover {
   height: calc(100dvh - 96px - 2em) !important;
   background-position: center;
   background-size: cover;
+
 }
 
 .about-us-container{
   display: grid;
   grid-column: 2/14;
   column-count: 12;
-  color: var(--mainTextColor);
+  color: #fff;
 }
 
 .about-us-header{
