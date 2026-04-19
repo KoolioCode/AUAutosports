@@ -1072,7 +1072,7 @@ input[type=submit]:hover {
 .landing-page-learn-more{
   height: calc(100dvh - 3px - 3em);
   background-color: var(--mainPageColor);
-  grid-column: 2/14;
+  grid-column: 1/-1;
   display: flex;
   place-content: center;
   align-items: center;
@@ -1086,6 +1086,7 @@ input[type=submit]:hover {
   place-content: center;
   align-items: center;
   align-content: center ;
+  width: 100%;
 }
 
 .landing-page-learn-more div img{
@@ -1098,16 +1099,18 @@ input[type=submit]:hover {
 
   background-color: #e86100;
   border-radius: 1em;
+  width: 20dvw;
   
 }
 .landing-page-learn-more-button p{
-  font-size: 1em ;
+  font-size: 2em ;
   padding: 1em;
+  text-decoration: none
 }
 
-a.landing-page-learn-more-button:link  { text-decoration: none; color: #FFF}
-a.landing-page-learn-more-button:visited  { text-decoration: none; color: #FFF;}
-a.landing-page-learn-more-button:hover  { text-decoration: none;  color: #FFF; transform:scale(110%); transition: .25s ease; }
+a div.landing-page-learn-more-button p:link  { text-decoration: none; color: #FFF}
+a div.landing-page-learn-more-button p:visited  { text-decoration: none; color: #FFF;}
+a div.landing-page-learn-more-button p:hover  { text-decoration: none;  color: #FFF; transform:scale(110%); transition: .25s ease; }
 
 .sponsor-container{
   grid-column: 2/14;
