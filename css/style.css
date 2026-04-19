@@ -1097,9 +1097,9 @@ input[type=submit]:hover {
   
 }
 
-landing
 
-.landing-page-learn-more-button div{
+
+.landing-page-learn-more-button{
   display: block;
   background-color: #e86100;
   border-radius: 1em;
