@@ -1009,7 +1009,7 @@ input[type=submit]:hover {
   color: var(--auburnOrange);
 }
 
-
+/* About us Page Style */
 .page-header.about-us{
   background-image: url("../assets/placeholders/Aaron_Alec_Tabling.jpg");
   grid-column: 1/-1;
@@ -1073,7 +1073,8 @@ input[type=submit]:hover {
   height: calc(100dvh - 3px - 3em);
   background-color: var(--mainPageColor);
   grid-column: 1/-1;
-  display: subgrid;
+  display: grid;
+  grid-template-columns: subgrid;
   place-content: center;
   align-items: center;
   align-content: center;
