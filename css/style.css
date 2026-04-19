@@ -1088,7 +1088,7 @@ input[type=submit]:hover {
   align-items: center;
   align-content: center ;
   width: 100%;
-  grid-column: 2/14;
+  grid-column: 3/13;
 }
 
 .landing-page-learn-more div img{
@@ -1103,6 +1103,7 @@ input[type=submit]:hover {
   background-color: #e86100;
   border-radius: 1em;
   width: 20dvw;
+  grid-column: 3/13;
   
 }
 .landing-page-learn-more-button p{
