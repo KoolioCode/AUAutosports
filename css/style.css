@@ -1075,7 +1075,6 @@ input[type=submit]:hover {
   text-wrap: nowrap;
   grid-column: 1/-1;
   height: fit-content;
-  display: block;
 }
 
 
@@ -1093,7 +1092,7 @@ input[type=submit]:hover {
 
 .landing-page-learn-more div{
 
-  display: block;
+  display: flex;
   place-content: center;
   align-items: center;
   align-content: center ;
