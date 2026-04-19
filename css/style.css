@@ -1099,7 +1099,7 @@ input[type=submit]:hover {
 
 
 .landing-page-learn-more-button{
-
+  display: block;
   background-color: #e86100;
   border-radius: 1em;
   width: 50dvw;
