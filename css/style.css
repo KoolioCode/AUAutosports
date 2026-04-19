@@ -1087,12 +1087,13 @@ input[type=submit]:hover {
   align-items: center;
   align-content: center ;
   width: 100%;
+  grid-column: 2/14;
 }
 
 .landing-page-learn-more div img{
   width: 100%;
   height: auto;
-  grid-column: 2/14;
+  
 }
 
 
