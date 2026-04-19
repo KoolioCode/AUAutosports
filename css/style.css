@@ -1086,7 +1086,7 @@ input[type=submit]:hover {
   grid-column: 1/-1;
   display: grid;
   grid-template-columns: subgrid;
-  place-content: flex-start;
+  
 }
 
 .landing-page-learn-more div{
