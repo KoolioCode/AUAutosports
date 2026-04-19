@@ -1107,12 +1107,13 @@ input[type=submit]:hover {
 .landing-page-learn-more-button p{
   font-size: 2em ;
   padding: 1em;
-  text-decoration: none
+  text-decoration: none;
+  color:#fff;
 }
 
-a div.landing-page-learn-more-button p:link  { text-decoration: none; color: #FFF}
-a div.landing-page-learn-more-button p:visited  { text-decoration: none; color: #FFF;}
-a div.landing-page-learn-more-button p:hover  { text-decoration: none;  color: #FFF; transform:scale(110%); transition: .25s ease; }
+a div.landing-page-learn-more-button:link  { text-decoration: none; color: #FFF}
+a div.landing-page-learn-more-button:visited  { text-decoration: none; color: #FFF;}
+a div.landing-page-learn-more-button:hover  { text-decoration: none;  color: #FFF; transform:scale(110%); transition: .25s ease; }
 
 .sponsor-container{
   grid-column: 2/14;
