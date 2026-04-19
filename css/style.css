@@ -1075,6 +1075,7 @@ input[type=submit]:hover {
   text-wrap: nowrap;
   grid-column: 1/-1;
   height: fit-content;
+  margin-top: 10em;
   
 }
 
@@ -1115,7 +1116,7 @@ input[type=submit]:hover {
   grid-column: 3/13;
   place-self: center;
   font-family: "sweet-sans-pro", sans-serif;
-  margin-top: 2em;
+  margin-top: 4em;
   letter-spacing: 2px;
   
 }
