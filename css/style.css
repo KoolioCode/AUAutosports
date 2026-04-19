@@ -1094,7 +1094,7 @@ input[type=submit]:hover {
 .landing-page-learn-more div img{
   width: 100%;
   height: auto;
-  
+  padding: 1em;
 }
 
 
@@ -1107,7 +1107,7 @@ input[type=submit]:hover {
   grid-column: 3/13;
   place-self: center;
   align-self: center;
-
+  font-family: "sweet-sans-pro", sans-serif;
   
 }
 .landing-page-learn-more-button p{
