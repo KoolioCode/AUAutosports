@@ -1117,6 +1117,7 @@ input[type=submit]:hover {
   align-self: center;
   font-family: "sweet-sans-pro", sans-serif;
   margin-top: 2em;
+  letter-spacing: 2px;
   
 }
 .landing-page-learn-more-button p{
