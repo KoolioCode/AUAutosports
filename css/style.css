@@ -1071,6 +1071,12 @@ input[type=submit]:hover {
   grid-column: 1/-1;
 }
 
+.page-header.learn-more{
+  text-wrap: nowrap;
+  grid-column: 1/-1;
+}
+
+
 .landing-page-learn-more{
   height: calc(100dvh - 3px - 3em);
   background-color: var(--mainPageColor);
