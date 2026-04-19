@@ -1072,7 +1072,7 @@ input[type=submit]:hover {
 .landing-page-learn-more{
   height: calc(100dvh - 3px - 3em);
   background-color: var(--mainPageColor);
-  grid-column: 1/15;
+  grid-column: 2/14;
   display: flex;
   place-content: center;
   align-items: center;
@@ -1094,7 +1094,20 @@ input[type=submit]:hover {
 }
 
 
+.landing-page-learn-more-button{
 
+  background-color: #e86100;
+  border-radius: 1em;
+  
+}
+.landing-page-learn-more-button p{
+  font-size: 1em ;
+  padding: 1em;
+}
+
+a.landing-page-learn-more-button:link  { text-decoration: none; color: #FFF}
+a.landing-page-learn-more-button:visited  { text-decoration: none; color: #FFF;}
+a.landing-page-learn-more-button:hover  { text-decoration: none;  color: #FFF; transform:scale(110%); transition: .25s ease; }
 
 .sponsor-container{
   grid-column: 2/14;
