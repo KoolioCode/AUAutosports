@@ -1074,6 +1074,7 @@ input[type=submit]:hover {
 .page-header.learn-more{
   text-wrap: nowrap;
   grid-column: 1/-1;
+  height: fit-content;
 }
 
 
@@ -1097,6 +1098,7 @@ input[type=submit]:hover {
   align-content: center ;
   width: 100%;
   grid-column: 3/13;
+  height: fit-content;
 }
 
 .landing-page-learn-more div img{
