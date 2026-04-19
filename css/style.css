@@ -784,6 +784,8 @@ a.error-button:hover  { text-decoration: none;  color: #FFF; transform:scale(110
   color: var(--mainTextColor);
   font-size: 3vw;
   text-align: center;
+  font-family: "sweet-sans-pro", sans-serif;
+  
   
 }
 
