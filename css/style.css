@@ -1108,6 +1108,7 @@ input[type=submit]:hover {
   place-self: center;
   align-self: center;
   font-family: "sweet-sans-pro", sans-serif;
+  margin-top: 2em;
   
 }
 .landing-page-learn-more-button p{
