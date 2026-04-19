@@ -1085,10 +1085,7 @@ input[type=submit]:hover {
   grid-column: 1/-1;
   display: grid;
   grid-template-columns: subgrid;
-  place-content: center;
-  align-items: top;
-  align-content: center;
-  
+  place-content: flex-start;
 }
 
 .landing-page-learn-more div{
@@ -1116,7 +1113,7 @@ input[type=submit]:hover {
   border-radius: 1em;
   width: 25dvw;
   grid-column: 3/13;
-  
+  place-self: center;
   font-family: "sweet-sans-pro", sans-serif;
   margin-top: 2em;
   letter-spacing: 2px;
