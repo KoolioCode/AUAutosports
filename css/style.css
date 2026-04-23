@@ -1018,6 +1018,7 @@ input[type=submit]:hover {
   height: calc(100dvh - 96px - 2em) !important;
   background-position: center;
   background-size: cover;
+  color: #FFF;
 
 }
 
