@@ -643,13 +643,20 @@ nav {
 
 .quote{
   display: flex;
-  grid-column: 1/-1;
+  grid-column: 2/14;
 }
 
 
 .about-team-container{
 
   
+  
+}
+.who-are-we img{
+  grid-column: 1/6;
+}
+
+.who-are-we{
   
 }
 
