@@ -661,7 +661,7 @@ nav {
 }
 
 .waw-img-container{
-  grid-column: 1/6;
+  grid-column: 1/7;
 }
 
 .waw-img-container img {
@@ -669,7 +669,7 @@ nav {
 }
 
 .waw-text-container{
-  grid-column: 6/13;
+  grid-column: 7/-1;
 }
 
 .about-engineering-container{
