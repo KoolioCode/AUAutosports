@@ -659,7 +659,9 @@ nav {
 }
 
 .who-are-we{
- 
+ display: grid;
+ grid-template-columns: subgrid;
+ grid-column: -1/1;
 }
 
 .about-engineering-container{
