@@ -634,18 +634,19 @@ nav {
 
 }
 
-.about-us-container{
-  display: grid;
-  grid-column: 2/14;
-  column-count: 12;
-  color: var(--mainTextColor);
-}
+
 
 .quote{
   display: flex;
   grid-column: 2/14;
 }
 
+.about-us-container{
+  display: grid;
+  grid-column: 2/14;
+  column-count: 12;
+  color: var(--mainTextColor);
+}
 
 .about-team-container{
   display: grid;
@@ -654,7 +655,7 @@ nav {
   
   
 }
-.who-are-we img{
+.about-team-container.who-are-we img{
   grid-column: 1/6;
 }
 
