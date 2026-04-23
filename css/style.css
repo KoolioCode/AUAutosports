@@ -655,8 +655,9 @@ nav {
 
 .who-are-we{
  display: grid;
- column-count: 12;
- grid-column: 1/14;
+ grid-template-columns: repeat(12, [col-start] 1fr) ;
+ column-gap: 20px;
+ 
 }
 
 .waw-img-container{
