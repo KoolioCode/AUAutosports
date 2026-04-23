@@ -657,6 +657,7 @@ nav {
 }
 .about-team-container.who-are-we img{
   grid-column: 1/6;
+  width: 100%;
 }
 
 .who-are-we{
