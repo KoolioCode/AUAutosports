@@ -644,7 +644,6 @@ nav {
 .about-us-container{
   display: block;
   grid-column: 2/14;
-  
   color: var(--mainTextColor);
   
 }
