@@ -524,19 +524,7 @@ nav {
 
 }
 
-/*.landing-header-container video {
-
-  height: 100%;
-  margin: 0;
-  object-fit:cover;
-  object-position: top;
-  position: fixed;
-  width: 100%;
-  z-index: -1;
-  
-}*/
-
-.landing-header-container img {
+.landing-header-container video {
 
   height: 100%;
   margin: 0;
@@ -547,6 +535,18 @@ nav {
   z-index: -3;
   
 }
+/*
+.landing-header-container img {
+
+  height: 100%;
+  margin: 0;
+  object-fit:cover;
+  object-position: top;
+  position: fixed;
+  width: 100%;
+  z-index: -3;
+  
+}*/
 
 
 /* Gallery carousel*/
