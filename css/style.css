@@ -667,6 +667,10 @@ nav {
   grid-column: 1/6;
 }
 
+.waw-img-container img {
+  width: 100%;
+}
+
 .about-engineering-container{
 
 }
