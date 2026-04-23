@@ -655,14 +655,16 @@ nav {
   
   
 }
-.about-us-container.who-are-we.waw-img-container{
-  grid-column: 1/6;
-}
+
 
 .who-are-we{
  display: grid;
  grid-template-columns: subgrid;
  grid-column: -1/1;
+}
+
+.about-us-container.who-are-we.waw-img-container{
+  grid-column: 1/6;
 }
 
 .about-engineering-container{
