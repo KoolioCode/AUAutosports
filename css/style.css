@@ -1031,6 +1031,7 @@ input[type=submit]:hover {
 .about-us-header{
   display: flex;
   grid-column: 1/15;
+  color: #FFF;
 
 }
 
@@ -1132,7 +1133,7 @@ input[type=submit]:hover {
 .landing-page-learn-more-button:visited  { text-decoration: none; color: #FFF;}
 .landing-page-learn-more-button:hover  { text-decoration: none;  color: #FFF; transform:scale(110%); transition: .25s ease; }
 
-.sponsor-container{
+.sponsor-tier-container{
   grid-column: 2/14;
   display: flex;
   align-items: center;
