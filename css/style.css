@@ -666,7 +666,9 @@ nav {
 }
 
 .waw-text-container{
+  display: flex;
   grid-column: 7/-1;
+  align-items: center;
 }
 
 .about-engineering-container{
