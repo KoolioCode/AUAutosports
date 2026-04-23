@@ -676,6 +676,14 @@ nav {
   width: 100%;
 }
 
+.twmtd-text-container{
+  display: flex;
+  flex-direction: column;
+  grid-column: 5/9;
+  justify-content: center;
+  align-items: center;
+}
+
 .about-engineering-container{
 
 }
