@@ -364,6 +364,7 @@ nav {
   height: 100%;
   align-items: center;
   align-self: center;
+  mix-blend-mode: difference
 
 
 }
