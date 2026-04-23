@@ -646,10 +646,8 @@ nav {
   grid-column: 2/14;
   
   color: var(--mainTextColor);
-  margin: 1em;
+  margin: 3em;
 }
-
-
 
 .who-are-we{
  display: grid;
