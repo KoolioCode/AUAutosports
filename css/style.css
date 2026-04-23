@@ -646,14 +646,15 @@ nav {
   grid-column: 2/14;
   
   color: var(--mainTextColor);
-  margin: 3em;
+  
 }
 
 .who-are-we{
  display: grid;
  grid-template-columns: repeat(12, [col-start] 1fr) ;
  column-gap: 20px;
- 
+ margin-top: 3em;
+ margin-bottom: 3em;
 }
 
 .waw-img-container{
