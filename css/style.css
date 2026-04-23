@@ -670,6 +670,7 @@ nav {
   grid-column: 7/-1;
   align-items: center;
   flex-direction: column;
+  justify-content: center;
 }
 .waw-text-container h1,.waw-text-container p{
   
