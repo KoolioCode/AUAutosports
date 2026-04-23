@@ -650,7 +650,7 @@ nav {
 
 .about-team-container{
   display: grid;
-  grid-column: -1/1;
+  grid-column: 1/-1;
   grid-template-columns: subgrid;
   
   
