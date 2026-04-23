@@ -1026,21 +1026,13 @@ input[type=submit]:hover {
   display: grid;
   grid-column: 2/14;
   column-count: 12;
-  color: #fff;
+  color: var(--mainTextColor);
 }
 
-.about-us-header{
-  display: flex;
-  grid-column: 1/15;
-  color: #FFF;
-
-}
-
-.about-us-header img{
-  width: 100%;
-}
 
 .about-team-container{
+
+  
   
 }
 
