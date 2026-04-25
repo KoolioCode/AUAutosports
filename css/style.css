@@ -1669,7 +1669,7 @@ and (max-width : 480px){
   }
 
   .about-us-counter > div {
-    grid-template-columns: 0 1fr 0;
+    grid-template-columns:  1fr ;
     row-gap: 5em;
   }
   .counter:not(:last-child)::before{
