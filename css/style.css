@@ -1866,12 +1866,7 @@ and (max-width : 750px){
   
 
 
-  .about-us-counter > div{
-    grid-template-columns: 1fr 1fr;
-  }
-  .counter:nth-child(2)::before {
-    display: none;
-  }
+ 
   
 }
 
@@ -1926,6 +1921,18 @@ and (max-width : 800px) {
 
   .landing-button-text p{
     font-size: 4vw;
+  }
+  
+}
+
+@media only screen 
+and (max-width : 750px)
+and (min-width : 481px) {
+  .about-us-counter > div{
+    grid-template-columns: 1fr 1fr;
+  }
+  .counter:nth-child(2)::before {
+    display: none;
   }
   
 }
