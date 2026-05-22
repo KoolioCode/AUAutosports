@@ -30,14 +30,17 @@
   <!-- Title -->
   <title> Wallpapers </title> 
 
+  <!-- JS Summons (DO NOT USE LOCAL CALLS) -->
 
+  <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+  <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-  
-    <script src="node_modules/jquery/dist/jquery.min.js" ></script>
-    <script  src="node_modules/masonry-layout/dist/masonry.pkgd.min.js" ></script>
-    <script  src="node_modules/imagesloaded/imagesloaded.pkgd.js" ></script>
-    <script src="node_modules/aos/dist/aos.js"></script>
-    <script src="js/script.js" async></script>
+  <script>
+    AOS.init();
+  </script>
+
+  <script src="js/script.js" async></script>
 
 </head>  
 <body>
