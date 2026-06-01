@@ -1236,9 +1236,20 @@ input[type=submit]:hover {
 
 .sponsor-tier-container{
   grid-column: 2/14;
-  display: block;
+  display: flex;
   align-items: center;
   place-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 100%;
+}
+.our-sponsors{
+  grid-column: 2/14;
+  display: flex;
+  align-items: center;
+  place-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
   width: 100%;
 }
 
