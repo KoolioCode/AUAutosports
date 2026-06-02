@@ -180,7 +180,7 @@ if ( document.URL.startsWith("https://auatosport.com/gallery") ) {
     }
   }
 }
-handleClick();
+
 
 if ( document.URL.includes("gallery") ) {
   // init Masonry
