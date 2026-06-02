@@ -180,6 +180,7 @@ if ( document.URL.includes("gallery.html") ) {
     }
   }
 }
+handleClick();
 
 if ( document.URL.includes("gallery") ) {
   // init Masonry
