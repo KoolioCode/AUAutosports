@@ -163,7 +163,7 @@ const modeToggle = () => {
 }
 modeToggle();
 
-if ( document.URL.startsWith("https://auatosport/gallery") ) {
+if ( document.URL.startsWith("https://auatosport.com/gallery") ) {
   
   const list = document.querySelector(".carousel-list");
  
