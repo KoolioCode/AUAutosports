@@ -163,7 +163,7 @@ const modeToggle = () => {
 }
 modeToggle();
 
-if ( document.URL.includes("gallery.html") ) {
+if ( document.URL.includes("gallery") ) {
   
   const list = document.querySelector(".carousel-list");
  
