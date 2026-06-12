@@ -303,7 +303,7 @@ window.addEventListener("scroll", () => {
   }
   
 });
-
+/*
 let valueDisplays = document.querySelectorAll(".counter span");
 let interval = 1000;
 console.log(valueDisplays);
@@ -319,7 +319,7 @@ valueDisplays.forEach((valueDisplay) => {
     }
   }, duration)
 })
-
+*/
 
 
 
