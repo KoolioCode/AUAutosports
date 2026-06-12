@@ -280,7 +280,7 @@ window.addEventListener('scroll', () => {
         }
       }
       updateCount();
-      activated=true;
+      activated = true;
     });
   } else if ( pageYOffset < container.offsetTop - container.offsetHeight - 500 || pageYOffset === 0 && activated === true){
     counters.forEach(counter => {
@@ -289,7 +289,16 @@ window.addEventListener('scroll', () => {
 
     activated = false;
   }
-  /*
+ 
+
+});
+
+
+
+
+
+
+ 
       let valueDisplays = document.querySelectorAll(".about-us-counter span");
       let interval = 1000;
       console.log(valueDisplays);
@@ -304,12 +313,4 @@ window.addEventListener('scroll', () => {
             clearInterval(counter);
           }
         }, duration)
-    })*/
-
-});
-
-
-
-
-
-
+    })
