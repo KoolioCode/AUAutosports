@@ -300,7 +300,7 @@ window.addEventListener('scroll', () => {
 
 
 
- /*
+ 
       let valueDisplays = document.querySelectorAll(".about-us-counter span");
       let interval = 1000;
       console.log(valueDisplays);
@@ -315,4 +315,4 @@ window.addEventListener('scroll', () => {
             clearInterval(counter);
           }
         }, duration)
-    })*/
+    })
