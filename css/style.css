@@ -1245,7 +1245,7 @@ input[type=submit]:hover {
 }
 
 .sponsor-tier-container img{
-  width: 100dvw;
+  width: 100%;
 }
 .our-sponsors{
   grid-column: 2/14;
