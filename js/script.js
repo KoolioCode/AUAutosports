@@ -275,7 +275,7 @@ window.addEventListener('scroll', () => {
         if(count < target){
           count++;
           counter.innerText = count;
-          setTimeout(updateCount,100);
+          setTimeout(updateCount,20);
         } else{
           counter.innerText = target;
 
