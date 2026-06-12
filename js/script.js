@@ -19,7 +19,7 @@ window.addEventListener("load", () => {
   html.classList.remove("preload");
 });
 
-/*
+
 // init AOS animation
 window.addEventListener("load", () => {
     AOS.init({
@@ -92,62 +92,6 @@ const navSlide = () => {
 }
 navSlide();
 
-
-const counters = document.querySelectorAll(".about-us-counter span");
-const container = document.querySelector(".about-us-counter");
-
-let activated = false;
-
-window.addEventListener('scroll', () => {
-  
-  if( pageYOffset > container.offsetTop - container.offsetheight - 200 && activated === false){
-     
-    counters.forEach(counter => {
-
-      counters.innerText = 0;
-
-      let count = 0;
-
-      function updateCount(){
-        const target = parseInt(counter.dataset.count);
-
-        if(count < target){
-          count++;
-          counter.innerText = count;
-          setTimeout(updateCount,10);
-        } else{
-          counter.innerText = target;
-
-        }
-      }
-      updateCount();
-      activated=true;
-    });
-  } else if ( pageYOffset < container.offsetTop - container.offsetHeight - 500 || pageYOffset === 0 && activated === true){
-    counters.forEach(counter => {
-      counter.innerText = 0;
-    });
-
-    activated = false;
-  }
-  /*
-    let valueDisplays = document.querySelectorAll(".about-us-counter span");
-    let interval = 1000;
-    console.log(valueDisplays);
-    valueDisplays.forEach((valueDisplay) => {
-      let startValue =0;
-      let endValue = parseInt(valueDisplay.getAttribute ("data-count"));
-      let duration = Math.floor(interval / endValue);
-      let counter = setInterval(function(){
-        startValue += 1
-        valueDisplay.textContent = startValue;
-        if(startValue == endValue){
-          clearInterval(counter);
-        }
-      }, duration)
-      })*/
-
-});
 
 
 
@@ -307,6 +251,62 @@ landingScroll();
 
 
 
+
+const counters = document.querySelectorAll(".about-us-counter span");
+const container = document.querySelector(".about-us-counter");
+
+let activated = false;
+
+window.addEventListener('scroll', () => {
+  
+  if( pageYOffset > container.offsetTop - container.offsetheight - 200 && activated === false){
+     
+    counters.forEach(counter => {
+
+      counters.innerText = 0;
+
+      let count = 0;
+
+      function updateCount(){
+        const target = parseInt(counter.dataset.count);
+
+        if(count < target){
+          count++;
+          counter.innerText = count;
+          setTimeout(updateCount,10);
+        } else{
+          counter.innerText = target;
+
+        }
+      }
+      updateCount();
+      activated=true;
+    });
+  } else if ( pageYOffset < container.offsetTop - container.offsetHeight - 500 || pageYOffset === 0 && activated === true){
+    counters.forEach(counter => {
+      counter.innerText = 0;
+    });
+
+    activated = false;
+  }
+  /*
+      let valueDisplays = document.querySelectorAll(".about-us-counter span");
+      let interval = 1000;
+      console.log(valueDisplays);
+      valueDisplays.forEach((valueDisplay) => {
+        let startValue =0;
+        let endValue = parseInt(valueDisplay.getAttribute ("data-count"));
+        let duration = Math.floor(interval / endValue);
+        let counter = setInterval(function(){
+          startValue += 1
+          valueDisplay.textContent = startValue;
+          if(startValue == endValue){
+            clearInterval(counter);
+          }
+        }, duration)
+    })*/
+
+});
 
 
 
