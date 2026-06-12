@@ -265,11 +265,11 @@ landingScroll();
 
 
 const counters = document.querySelectorAll(".about-us-counter span");
-const container = document.querySelectorAll(".about-us-counter");
+const container = document.querySelector(".about-us-counter");
 
 let activated = false;
 
-window.addEventListener(scroll, () => {
+window.addEventListener("scroll", () => {
 
   if( pageYOffset>container.offsetTop - container.offsetheight - 200 && activated === false){
      
