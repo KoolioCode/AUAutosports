@@ -299,7 +299,7 @@ window.addEventListener('scroll', () => {
 
 
  
-      let valueDisplays = document.querySelectorAll(".about-us-counter span");
+      let valueDisplays = document.querySelectorAll(".about-us-counter counter span");
       let interval = 1000;
       console.log(valueDisplays);
       valueDisplays.forEach((valueDisplay) => {
