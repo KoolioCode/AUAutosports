@@ -254,32 +254,44 @@ if(document.URL ==="http://auautosport.com"||document.URL ==="http://auautosport
 
 
 
-const counters = document.querySelectorAll(".about-us-counter span");
+const counters = document.querySelectorAll(".counter-num");
 const container = document.querySelector(".about-us-counter");
 
 let activated = false;
 
 window.addEventListener('scroll', () => {
   
-  if( pageYOffset > container.offsetTop - container.offsetheight - 200 && activated === false){
+  if( pageYOffset > container.offsetTop - container.offsetHeight - 200 && activated === false){
      
-     let valueDisplays = document.querySelectorAll(".counter-num")
-      let interval = 1000;
-      console.log(valueDisplays);
-      valueDisplays.forEach((valueDisplay) => {
-        let startValue =0;
-        let endValue = parseInt(valueDisplay.getAttribute ("data-count"));
-        let duration = Math.floor(interval / endValue);
-        let counter = setInterval(function(){
-          startValue += 1
-          valueDisplay.textContent = startValue;
-          if(startValue == endValue){
-            clearInterval(counter);
-          }
-        }, duration)
-    })
-    
-  } 
+    counters.forEach(counter => {
+
+      counters.innerText = 0;
+
+      let count = 0;
+
+      function updateCount(){
+        const target = parseInt(counter.dataset.count);
+
+        if(count < target){
+          count++;
+          counter.innerText = count;
+          setTimeout(updateCount,100);
+        } else{
+          counter.innerText = target;
+
+        }
+      }
+      updateCount();
+      activated = true;
+    });
+  } else if ( pageYOffset < container.offsetTop - container.offsetHeight - 500 || pageYOffset === 0 && activated === true){
+    counters.forEach(counter => {
+      counter.innerText = 0;
+    });
+
+    activated = false;
+  }
+ 
 
 });
 
@@ -287,6 +299,3 @@ window.addEventListener('scroll', () => {
 
 
 
-
- 
-     
