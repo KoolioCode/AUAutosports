@@ -198,7 +198,21 @@ if ( document.URL.includes("gallery") ) {
 }
 
 
+if(document.URL ==="http://auautosport.com"||document.URL ==="http://auautosport.com/index.html"){
+  const landingScroll = () => {
 
+    const landingButton = document.querySelector('.landing-button')
+
+
+    landingButton.addEventListener('click', () => {
+      landingButton.classList.remove('aos-animate')
+      slowScrollTo(document.getElementById('scrollthing'), 2000,96);
+
+    });
+  }
+  landingScroll();
+
+}
 
 // Custom slow scroll function
 function slowScrollTo(element, duration = 2000, offset) {
@@ -236,21 +250,7 @@ function slowScrollTo(element, duration = 2000, offset) {
   requestAnimationFrame(animation);
 }
 
-if(document.URL ==="http://auautosport.com"||document.URL ==="http://auautosport.com/index.html"){
-  const landingScroll = () => {
 
-    const landingButton = document.querySelector('.landing-button')
-
-
-    landingButton.addEventListener('click', () => {
-      landingButton.classList.remove('aos-animate')
-      slowScrollTo(document.getElementById('scrollthing'), 2000,96);
-
-    });
-  }
-  landingScroll();
-
-}
 
 
 
