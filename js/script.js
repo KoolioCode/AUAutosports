@@ -262,7 +262,7 @@ let activated = false;
 window.addEventListener('scroll', () => {
   
   if( pageYOffset > container.offsetTop - container.offsetHeight - 200 && activated === false){
-     
+    activated = true;
     counters.forEach(counter => {
 
       counters.innerText = 0;
@@ -282,7 +282,7 @@ window.addEventListener('scroll', () => {
         }
       }
       updateCount();
-      activated = true;
+     
     });
   } 
  
