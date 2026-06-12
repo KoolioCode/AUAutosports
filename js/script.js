@@ -271,7 +271,7 @@ let activated = false;
 
 window.addEventListener('scroll', () => {
 
-  if( pageYOffset>container.offsetTop - container.offsetheight - 200 && activated === false){
+  if( pageYOffset > container.offsetTop - container.offsetheight - 200 && activated === false){
      
     counters.forEach(counter => {
 
