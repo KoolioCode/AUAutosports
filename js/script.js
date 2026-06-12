@@ -236,7 +236,7 @@ function slowScrollTo(element, duration = 2000, offset) {
   requestAnimationFrame(animation);
 }
 
-if (on_index == true){
+
   const landingScroll = () => {
 
     const landingButton = document.querySelector('.landing-button')
@@ -249,7 +249,7 @@ if (on_index == true){
     });
   }
   landingScroll();
-}
+
 
 
 
