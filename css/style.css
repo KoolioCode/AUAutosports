@@ -1324,6 +1324,7 @@ footer {
   margin: 0;
   padding: 0;
   width: 100%;
+  flex-wrap: wrap;
   
 }
 
@@ -1331,6 +1332,7 @@ footer {
 
   list-style: none;
   margin: 0;
+  
   
 }
 
