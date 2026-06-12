@@ -284,13 +284,7 @@ window.addEventListener('scroll', () => {
       updateCount();
       activated = true;
     });
-  } else if ( pageYOffset < container.offsetTop - container.offsetHeight - 500 || pageYOffset === 0 && activated === true){
-    counters.forEach(counter => {
-      counter.innerText = 0;
-    });
-
-    activated = false;
-  }
+  } 
  
 
 });
