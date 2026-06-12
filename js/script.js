@@ -1,7 +1,7 @@
 /* JS Document for AU Autosports website */
 
 /*js comment it out if ur working locally man*/
-/**/
+/*
 
   if (window.location.href.endsWith(".html")) {
     window.location.href = window.location.href.replace(".html", "");
