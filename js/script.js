@@ -236,7 +236,7 @@ function slowScrollTo(element, duration = 2000, offset) {
   requestAnimationFrame(animation);
 }
 
-if(document.URL ==="http://auautosport.com"||document.URL ==="http://auautosport.com/index.html")
+if(document.URL ==="http://auautosport.com"||document.URL ==="http://auautosport.com/index.html"){
   const landingScroll = () => {
 
     const landingButton = document.querySelector('.landing-button')
@@ -250,7 +250,7 @@ if(document.URL ==="http://auautosport.com"||document.URL ==="http://auautosport
   }
   landingScroll();
 
-
+}
 
 
 
@@ -301,7 +301,7 @@ window.addEventListener('scroll', () => {
 
 
  
-      let valueDisplays = document.querySelectorAll(".counter-num);
+      let valueDisplays = document.querySelectorAll(".counter-num")
       let interval = 1000;
       console.log(valueDisplays);
       valueDisplays.forEach((valueDisplay) => {
