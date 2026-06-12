@@ -1,8 +1,8 @@
 /* JS Document for AU Autosports website */
-
-/*js comment it out if ur working locally man*/
-/**/
-
+/*
+  /*js comment it out if ur working locally man*/
+  /**/
+/*
   if (window.location.href.endsWith(".html")) {
     window.location.href = window.location.href.replace(".html", "");
   }
@@ -13,7 +13,7 @@
 
 
 
-/* disable animations until page is fully loaded to prevent eye strain */
+// disable animations until page is fully loaded to prevent eye strain 
 const html = document.querySelector('html');
 window.addEventListener("load", () => {
   html.classList.remove("preload");
@@ -31,15 +31,15 @@ window.addEventListener("load", () => {
 
 
 
-
+/*
 function smoothScroll(){
   const div = document.getElementById("scrollthing");
   div.scrollIntoView({
       behavior: 'smooth'
   });
 }
-
-/* stop animations and nav during resizing to prevent eye strain */
+/*
+// stop animations and nav during resizing to prevent eye strain 
 let resizeTimer;
 window.addEventListener("resize", () => {
 
@@ -47,7 +47,7 @@ window.addEventListener("resize", () => {
   const nav = document.querySelector('.nav-pages');
   const bodyscroll = document.querySelector('body')
 
-  /* remove nav active classes and noscroll when resizing to prevent nav still being open */
+  // remove nav active classes and noscroll when resizing to prevent nav still being open 
   if (window.screen.availWidth > 680){
     nav.classList.remove('nav-active-1'); 
     nav.classList.remove('nav-active-2'); 
@@ -57,7 +57,7 @@ window.addEventListener("resize", () => {
     burger.classList.remove('toggle');
   }
 
-  /* add and remove the resize animation stopper class */
+  // add and remove the resize animation stopper class 
   html.classList.add("resize-animation-stopper");
   clearTimeout(resizeTimer);
   resizeTimer = setTimeout(() => {
@@ -67,7 +67,7 @@ window.addEventListener("resize", () => {
 });
 
 
-/* nav animation and toggle */
+// nav animation and toggle 
 const navSlide = () => {
 
   const burger = document.querySelector('.burger');
@@ -76,15 +76,15 @@ const navSlide = () => {
 
   burger.addEventListener('click', () => {
 
-    /* toggle nav active classes with staggered timing for animation */
+    // toggle nav active classes with staggered timing for animation 
     setTimeout(() => {
       nav.classList.toggle('nav-active');
     }, 0);
     
-    /* toggle noscroll on body to prevent scrolling when nav is open */
+    // toggle noscroll on body to prevent scrolling when nav is open 
     bodyscroll.classList.toggle('no-scroll');
 
-    /* toggle burger animation */
+    // toggle burger animation 
     burger.classList.toggle('toggle');
     
   });  
@@ -95,7 +95,8 @@ navSlide();
 
 
 
-/* theme toggle and dark mode support */
+// theme toggle and dark mode support 
+/*
 const modeToggle = () => {
 
   const themeToggle = document.querySelector('.theme-toggle');
@@ -104,10 +105,10 @@ const modeToggle = () => {
   var keepTheme =  localStorage.getItem("keepTheme");
  
   
-  /* check if user has dark mode preference and set theme accordingly on page load */
+  // check if user has dark mode preference and set theme accordingly on page load 
   if (checkDarkPreferred() && localStorage.getItem("keepTheme") == "t") {
 
-    /* set dark mode active classes and icons on page load if user has dark mode preference */
+    // set dark mode active classes and icons on page load if user has dark mode preference 
     html.classList.add('dark');
     themeToggle.classList.add('theme-active','theme-scale');
     document.getElementById("icon-i").src = "https://cdn.auburn.edu/assets/icons/social_media/instagram/instagram_white_outline.svg"; 
@@ -120,7 +121,7 @@ const modeToggle = () => {
   }
 
 
-  /* toggle theme and animate theme toggle button */
+  // toggle theme and animate theme toggle button
   themeToggle.addEventListener('click', () => {
     if (keepTheme == "t"){
       keepTheme = "f";
@@ -136,7 +137,7 @@ const modeToggle = () => {
       themeToggle.classList.toggle('theme-scale');
       html.classList.toggle('dark');
       
-      /* toggle social media icons between light and dark versions */
+      // toggle social media icons between light and dark versions
       if (document.getElementById("icon-i").src == "https://cdn.auburn.edu/assets/icons/social_media/instagram/instagram_blue_outline.svg"){
         document.getElementById("icon-i").src = "https://cdn.auburn.edu/assets/icons/social_media/instagram/instagram_white_outline.svg";
         document.getElementById("icon-f").src = "https://cdn.auburn.edu/assets/icons/social_media/facebook/facebook_white_outline.svg";
@@ -162,8 +163,8 @@ const modeToggle = () => {
   });
 
 }
-modeToggle();
-
+modeToggle();*/
+/*
 if ( document.URL.includes("gallery") ) {
   
   const list = document.querySelector(".carousel-list");
@@ -196,10 +197,10 @@ if ( document.URL.includes("gallery") ) {
     $grid.masonry('layout');
   });
 }
+*/
 
 
-
-
+/*
 // Custom slow scroll function
 function slowScrollTo(element, duration = 2000, offset) {
   // Get the element's position relative to the viewport
@@ -234,8 +235,8 @@ function slowScrollTo(element, duration = 2000, offset) {
   }
   
   requestAnimationFrame(animation);
-}
-
+}*/
+/*
 const landingScroll = () => {
 
   const landingButton = document.querySelector('.landing-button')
@@ -248,7 +249,7 @@ const landingScroll = () => {
   });
 }
 landingScroll();
-
+*/
 
 
 
