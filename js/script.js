@@ -26,7 +26,7 @@ window.addEventListener("load", () => {
       duration: 1250, 
     });
 
-    Aos.refresh();
+    AOS.refresh();
 });
 
 
