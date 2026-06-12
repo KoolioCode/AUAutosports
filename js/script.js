@@ -236,7 +236,7 @@ function slowScrollTo(element, duration = 2000, offset) {
   requestAnimationFrame(animation);
 }
 
-
+if(document.URL ==="http://auautosport.com"||document.URL ==="http://auautosport.com/index.html")
   const landingScroll = () => {
 
     const landingButton = document.querySelector('.landing-button')
