@@ -236,18 +236,20 @@ function slowScrollTo(element, duration = 2000, offset) {
   requestAnimationFrame(animation);
 }
 
-const landingScroll = () => {
+if (on_index == true){
+  const landingScroll = () => {
 
-  const landingButton = document.querySelector('.landing-button')
+    const landingButton = document.querySelector('.landing-button')
 
 
-  landingButton.addEventListener('click', () => {
-    landingButton.classList.remove('aos-animate')
-    slowScrollTo(document.getElementById('scrollthing'), 2000,96);
+    landingButton.addEventListener('click', () => {
+      landingButton.classList.remove('aos-animate')
+      slowScrollTo(document.getElementById('scrollthing'), 2000,96);
 
-  });
+    });
+  }
+  landingScroll();
 }
-landingScroll();
 
 
 
